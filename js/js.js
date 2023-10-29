@@ -13,7 +13,7 @@ async function init() {
 
     document.getElementById('search').addEventListener('keyup', () => { searchticker() });
     document.getElementById('reset').addEventListener('click', () => { reset() });
-    document.getElementById('Tri').addEventListener('click', () => { Tri() });
+    document.getElementById('sortOptions').addEventListener('change', () => { tickerandinfos() });
 }
 
 function listetop() {
@@ -54,13 +54,30 @@ async function carrouselnews() {
 }
 
 async function tickerandinfos() {
-
-    //https://financialmodelingprep.com/api/v3/profile/"+ticker+"?apikey=fDWc2uOdhCZfmUNgorsLSIRk4rOYBNyd
     const tickerinfo = await fetch("../json/ticker.json");
-    tickerandinfo = await tickerinfo.json();
+    let tickerandinfo = await tickerinfo.json();
 
+    // Obtenez la valeur actuellement sélectionnée
+    const selectedOption = document.getElementById('sortOptions').value;
+
+    console.log(document.getElementById('sortOptions').value);
+
+    // Triez en fonction de l'option sélectionnée
+    tickerandinfo.sort((a, b) => {
+        if (selectedOption === "price") {
+            return a[selectedOption] - b[selectedOption];
+        } else {
+            return a[selectedOption].localeCompare(b[selectedOption]);
+        }
+    });
+
+    const ticketinfo = document.getElementById('tickerandinfo');
+
+    // Supprimez les entrées précédentes
+    ticketinfo.innerHTML = '';
+
+    // Créez et ajoutez les nouvelles entrées triées
     for (let i = 0; i < tickerandinfo.length; i++) {
-
         const ticker1 = document.createElement('tr');
         ticker1.classList.add('bg-white', 'dark:bg-[#131326]', 'hover:bg-gray-50', 'dark:hover:bg-gray-800', 'text-white', 'tickerandinfo');
         ticker1.innerHTML =
@@ -111,8 +128,4 @@ function reset() {
     } else {
         document.getElementById('search').disabled;
     }
-}
-
-async function Tri() {
-
 }
