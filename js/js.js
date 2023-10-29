@@ -98,7 +98,6 @@ async function tickerandinfos() {
 }
 
 async function searchticker() {
-    // ticker = document.getElementById('search').value;
     let input = document.getElementById('search').value;
     input = input.toLowerCase();
     let trtab = document.getElementsByClassName('tickerandinfo');
