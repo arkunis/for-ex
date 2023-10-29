@@ -60,8 +60,6 @@ async function tickerandinfos() {
     // Obtenez la valeur actuellement sélectionnée
     const selectedOption = document.getElementById('sortOptions').value;
 
-    console.log(document.getElementById('sortOptions').value);
-
     // Triez en fonction de l'option sélectionnée
     tickerandinfo.sort((a, b) => {
         if (selectedOption === "price") {
