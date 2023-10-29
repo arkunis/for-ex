@@ -1,8 +1,73 @@
 {
-    "items": "24",
+    "items": "25",
     "sentiment_score_definition": "x <= -0.35: Bearish; -0.35 < x <= -0.15: Somewhat-Bearish; -0.15 < x < 0.15: Neutral; 0.15 <= x < 0.35: Somewhat_Bullish; x >= 0.35: Bullish",
     "relevance_score_definition": "0 < x <= 1, with a higher score indicating higher relevance.",
     "feed": [
+        {
+            "title": "Brazil's USDT adoption soars in 2023, makes up 80% of all crypto transactions",
+            "url": "https://cointelegraph.com/news/brazil-usdt-adoption-soars-2023-80-crypto-transactions",
+            "time_published": "20231029T184247",
+            "authors": [
+                "Ana Paula Pereira"
+            ],
+            "summary": "USDT has seen a significant surge in adoption in Brazil, accounting for 80% of all cryptocurrency transactions in the country so far in 2023.",
+            "banner_image": "https://s3.cointelegraph.com/uploads/2023-10/54b1fa44-fae4-46d5-ad64-10ba7ee98a7d.png",
+            "source": "Cointelegraph",
+            "category_within_source": "n/a",
+            "source_domain": "cointelegraph.com",
+            "topics": [
+                {
+                    "topic": "Financial Markets",
+                    "relevance_score": "0.161647"
+                },
+                {
+                    "topic": "Earnings",
+                    "relevance_score": "0.538269"
+                },
+                {
+                    "topic": "Finance",
+                    "relevance_score": "1.0"
+                },
+                {
+                    "topic": "Blockchain",
+                    "relevance_score": "0.890401"
+                }
+            ],
+            "overall_sentiment_score": 0.104915,
+            "overall_sentiment_label": "Neutral",
+            "ticker_sentiment": [
+                {
+                    "ticker": "COIN",
+                    "relevance_score": "0.11983",
+                    "ticker_sentiment_score": "0.0",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "FOREX:BRL",
+                    "relevance_score": "0.11983",
+                    "ticker_sentiment_score": "0.091563",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "FOREX:USD",
+                    "relevance_score": "0.11983",
+                    "ticker_sentiment_score": "0.091563",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "CRYPTO:BTC",
+                    "relevance_score": "0.453501",
+                    "ticker_sentiment_score": "0.04711",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "CRYPTO:USDT",
+                    "relevance_score": "0.348919",
+                    "ticker_sentiment_score": "0.068258",
+                    "ticker_sentiment_label": "Neutral"
+                }
+            ]
+        },
         {
             "title": "SBF's Alameda minted $38B USDT to profit off arbitrage trading: Coinbase director",
             "url": "https://cointelegraph.com/news/sbf-alameda-minted-38b-usdt-for-arbitrage-trading-coinbase-director",
