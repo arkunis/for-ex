@@ -1,0 +1,1581 @@
+{
+    "items": "24",
+    "sentiment_score_definition": "x <= -0.35: Bearish; -0.35 < x <= -0.15: Somewhat-Bearish; -0.15 < x < 0.15: Neutral; 0.15 <= x < 0.35: Somewhat_Bullish; x >= 0.35: Bullish",
+    "relevance_score_definition": "0 < x <= 1, with a higher score indicating higher relevance.",
+    "feed": [
+        {
+            "title": "SBF's Alameda minted $38B USDT to profit off arbitrage trading: Coinbase director",
+            "url": "https://cointelegraph.com/news/sbf-alameda-minted-38b-usdt-for-arbitrage-trading-coinbase-director",
+            "time_published": "20231010T094009",
+            "authors": [
+                "Gareth Jenkinson"
+            ],
+            "summary": "Coinbase director Conor Grogan has flagged on chain data that highlights massive USDT mints ordered by Sam Bankman-Fried's Alameda Research in 2021.",
+            "banner_image": "https://images.cointelegraph.com/cdn-cgi/image/format=auto,onerror=redirect,quality=90,width=1200/https://s3.cointelegraph.com/uploads/2023-10/3e7aee18-0fbb-48e8-87fd-1ba6b5cc8d8c.jpg",
+            "source": "Cointelegraph",
+            "category_within_source": "n/a",
+            "source_domain": "cointelegraph.com",
+            "topics": [
+                {
+                    "topic": "Finance",
+                    "relevance_score": "1.0"
+                },
+                {
+                    "topic": "Blockchain",
+                    "relevance_score": "0.576289"
+                },
+                {
+                    "topic": "Financial Markets",
+                    "relevance_score": "0.538269"
+                }
+            ],
+            "overall_sentiment_score": 0.303594,
+            "overall_sentiment_label": "Somewhat-Bullish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "COIN",
+                    "relevance_score": "0.108958",
+                    "ticker_sentiment_score": "0.067298",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "FOREX:USD",
+                    "relevance_score": "0.318897",
+                    "ticker_sentiment_score": "0.151253",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "CRYPTO:BTC",
+                    "relevance_score": "0.41627",
+                    "ticker_sentiment_score": "-0.135017",
+                    "ticker_sentiment_label": "Neutral"
+                }
+            ]
+        },
+        {
+            "title": "Crypto Has 'No Innate or Inherent Value', SEC Argues in Coinbase Case",
+            "url": "https://decrypt.co/200625/crypto-has-no-innate-or-inherent-value-sec-argues-in-coinbase-case",
+            "time_published": "20231008T215646",
+            "authors": [
+                "Nicholas Morgan"
+            ],
+            "summary": "Wall Street's top cop made the assertion in its argument to a federal judge to dismiss a request for summary judgment in its lawsuit.",
+            "banner_image": "https://cdn.decrypt.co/resize/1024/height/512/wp-content/uploads/2023/10/SEC-Crypto-shutterstock_2346339641-16x9-1-gID_7.jpg",
+            "source": "Decrypt.co",
+            "category_within_source": "n/a",
+            "source_domain": "decrypt.co",
+            "topics": [
+                {
+                    "topic": "Finance",
+                    "relevance_score": "1.0"
+                },
+                {
+                    "topic": "Blockchain",
+                    "relevance_score": "0.890401"
+                },
+                {
+                    "topic": "Financial Markets",
+                    "relevance_score": "0.87644"
+                }
+            ],
+            "overall_sentiment_score": 0.053454,
+            "overall_sentiment_label": "Neutral",
+            "ticker_sentiment": [
+                {
+                    "ticker": "COIN",
+                    "relevance_score": "0.393771",
+                    "ticker_sentiment_score": "-0.074719",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "FOREX:USD",
+                    "relevance_score": "0.082111",
+                    "ticker_sentiment_score": "0.107422",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "CRYPTO:BTC",
+                    "relevance_score": "0.082111",
+                    "ticker_sentiment_score": "0.107422",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "CRYPTO:ADA",
+                    "relevance_score": "0.082111",
+                    "ticker_sentiment_score": "-0.086795",
+                    "ticker_sentiment_label": "Neutral"
+                }
+            ]
+        },
+        {
+            "title": "CoinDCX exchange expands self-custody wallet to support 155 countries",
+            "url": "https://cointelegraph.com/news/crypto-exchange-coindcx-transak-deal-okto-wallet",
+            "time_published": "20231005T133026",
+            "authors": [
+                "Helen Partz"
+            ],
+            "summary": "With Transak's integration, CoinDCX's Okto wallet has increased the number of supported jurisdictions from 60 to more than 150.",
+            "banner_image": "https://s3.cointelegraph.com/uploads/2023-10/3a38e3f3-2dfa-4b0a-908f-1cf8e1ac8414.png",
+            "source": "Cointelegraph",
+            "category_within_source": "n/a",
+            "source_domain": "cointelegraph.com",
+            "topics": [
+                {
+                    "topic": "Finance",
+                    "relevance_score": "1.0"
+                },
+                {
+                    "topic": "Blockchain",
+                    "relevance_score": "0.682689"
+                }
+            ],
+            "overall_sentiment_score": 0.183686,
+            "overall_sentiment_label": "Somewhat-Bullish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "COIN",
+                    "relevance_score": "0.092927",
+                    "ticker_sentiment_score": "0.170591",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "FOREX:HKD",
+                    "relevance_score": "0.092927",
+                    "ticker_sentiment_score": "0.103312",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "FOREX:EUR",
+                    "relevance_score": "0.092927",
+                    "ticker_sentiment_score": "0.103312",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "FOREX:USD",
+                    "relevance_score": "0.092927",
+                    "ticker_sentiment_score": "0.103312",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "CRYPTO:BTC",
+                    "relevance_score": "0.273807",
+                    "ticker_sentiment_score": "0.150385",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "CRYPTO:CAKE",
+                    "relevance_score": "0.092927",
+                    "ticker_sentiment_score": "0.170591",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                }
+            ]
+        },
+        {
+            "title": "Bitcoin, Ethereum, Dogecoin Tumble Amid Recession Worries: Analyst Says 'Uptober Has Been Temporarily Postponed' - Coinbase Glb  ( NASDAQ:COIN ) ",
+            "url": "https://www.benzinga.com/markets/cryptocurrency/23/10/35077223/bitcoin-ethereum-dogecoin-tumble-amid-recession-worries-analyst-says-uptober-has-been-temp",
+            "time_published": "20231004T022606",
+            "authors": [
+                "Mehab Qureshi"
+            ],
+            "summary": "Major cryptocurrencies experienced a significant decline as concerns rose over the possibility of higher interest rates stalling the housing market and potentially pushing the economy into a recession.",
+            "banner_image": "https://cdn.benzinga.com/files/images/story/2023/Cryptocurrency_Photo_by_Igor_Faun_on_Shutterstock_29.jpeg?width=1200&height=800&fit=crop",
+            "source": "Benzinga",
+            "category_within_source": "Markets",
+            "source_domain": "www.benzinga.com",
+            "topics": [
+                {
+                    "topic": "Financial Markets",
+                    "relevance_score": "0.538269"
+                },
+                {
+                    "topic": "Finance",
+                    "relevance_score": "1.0"
+                },
+                {
+                    "topic": "Blockchain",
+                    "relevance_score": "0.451494"
+                },
+                {
+                    "topic": "Economy - Macro",
+                    "relevance_score": "0.158519"
+                }
+            ],
+            "overall_sentiment_score": 0.029406,
+            "overall_sentiment_label": "Neutral",
+            "ticker_sentiment": [
+                {
+                    "ticker": "COIN",
+                    "relevance_score": "0.206685",
+                    "ticker_sentiment_score": "-0.104999",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "FOREX:USD",
+                    "relevance_score": "0.052226",
+                    "ticker_sentiment_score": "0.022078",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "CRYPTO:BTC",
+                    "relevance_score": "0.104228",
+                    "ticker_sentiment_score": "0.055078",
+                    "ticker_sentiment_label": "Neutral"
+                }
+            ]
+        },
+        {
+            "title": "Top-Performing ETF Areas of Last Week",
+            "url": "https://www.zacks.com/stock/news/2158823/top-performing-etf-areas-of-last-week",
+            "time_published": "20231002T170000",
+            "authors": [
+                "Sanghamitra Saha"
+            ],
+            "summary": "Wall Street was downbeat last week, with the S&P 500, the Dow Jones and the Nasdaq losing about 0.7%, 1.3% and 0.1%, respectively.",
+            "banner_image": "https://staticx-tuner.zacks.com/images/default_article_images/default219.jpg",
+            "source": "Zacks Commentary",
+            "category_within_source": "n/a",
+            "source_domain": "www.zacks.com",
+            "topics": [
+                {
+                    "topic": "Finance",
+                    "relevance_score": "0.333333"
+                },
+                {
+                    "topic": "Blockchain",
+                    "relevance_score": "0.158519"
+                },
+                {
+                    "topic": "Economy - Monetary",
+                    "relevance_score": "0.769861"
+                },
+                {
+                    "topic": "IPO",
+                    "relevance_score": "0.576289"
+                },
+                {
+                    "topic": "Financial Markets",
+                    "relevance_score": "0.99986"
+                },
+                {
+                    "topic": "Manufacturing",
+                    "relevance_score": "0.333333"
+                },
+                {
+                    "topic": "Real Estate & Construction",
+                    "relevance_score": "0.333333"
+                },
+                {
+                    "topic": "Economy - Macro",
+                    "relevance_score": "0.158519"
+                }
+            ],
+            "overall_sentiment_score": 0.227378,
+            "overall_sentiment_label": "Somewhat-Bullish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "RIVN",
+                    "relevance_score": "0.055881",
+                    "ticker_sentiment_score": "0.038003",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "IVZ",
+                    "relevance_score": "0.055881",
+                    "ticker_sentiment_score": "0.155528",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "COIN",
+                    "relevance_score": "0.274012",
+                    "ticker_sentiment_score": "0.387456",
+                    "ticker_sentiment_label": "Bullish"
+                },
+                {
+                    "ticker": "NKLA",
+                    "relevance_score": "0.055881",
+                    "ticker_sentiment_score": "0.038003",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "FOREX:USD",
+                    "relevance_score": "0.111488",
+                    "ticker_sentiment_score": "0.179127",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "CRYPTO:BTC",
+                    "relevance_score": "0.055881",
+                    "ticker_sentiment_score": "0.221057",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "CRYPTO:ETH",
+                    "relevance_score": "0.055881",
+                    "ticker_sentiment_score": "0.221057",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                }
+            ]
+        },
+        {
+            "title": "Coinbase's Stand with Crypto Day brings entrepreneurs to D.C.",
+            "url": "https://www.marketwatch.com/story/coinbases-stand-with-crypto-day-brings-entrepreneurs-to-d-c-491eb87d",
+            "time_published": "20230926T145900",
+            "authors": [
+                "Chris Matthews"
+            ],
+            "summary": "Crypto entrepreneurs from around the country are arriving in D.C. this week, joining Coinbase CEO Brian Armstrong to lobby lawmakers for pro-crypto legislation ...",
+            "banner_image": "https://images.mktw.net/im-789842/social",
+            "source": "MarketWatch",
+            "category_within_source": "Top Stories",
+            "source_domain": "www.marketwatch.com",
+            "topics": [
+                {
+                    "topic": "Finance",
+                    "relevance_score": "1.0"
+                },
+                {
+                    "topic": "Blockchain",
+                    "relevance_score": "0.928139"
+                },
+                {
+                    "topic": "Financial Markets",
+                    "relevance_score": "0.158519"
+                }
+            ],
+            "overall_sentiment_score": 0.035862,
+            "overall_sentiment_label": "Neutral",
+            "ticker_sentiment": [
+                {
+                    "ticker": "COIN",
+                    "relevance_score": "0.221819",
+                    "ticker_sentiment_score": "0.159062",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "FOREX:USD",
+                    "relevance_score": "0.056143",
+                    "ticker_sentiment_score": "0.006",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "CRYPTO:BTC",
+                    "relevance_score": "0.056143",
+                    "ticker_sentiment_score": "-0.047015",
+                    "ticker_sentiment_label": "Neutral"
+                }
+            ]
+        },
+        {
+            "title": "'Massive' crypto use cases to surface by 2030 - Coinbase exec",
+            "url": "https://cointelegraph.com/news/crypto-use-cases-coinbase-jesse-pollack",
+            "time_published": "20230926T130100",
+            "authors": [
+                "Andrew Singer"
+            ],
+            "summary": "Cointelegraph talks with Coinbase protocols lead and Base creator Jesse Pollak about the company's new blockchain, which is already a force to be reckoned with.",
+            "banner_image": "https://s3.cointelegraph.com/uploads/2023-09/e0d64f21-75bb-4f83-9f02-31a903890b04.png",
+            "source": "Cointelegraph",
+            "category_within_source": "n/a",
+            "source_domain": "cointelegraph.com",
+            "topics": [
+                {
+                    "topic": "Economy - Monetary",
+                    "relevance_score": "0.158519"
+                },
+                {
+                    "topic": "Finance",
+                    "relevance_score": "1.0"
+                },
+                {
+                    "topic": "Blockchain",
+                    "relevance_score": "0.928139"
+                }
+            ],
+            "overall_sentiment_score": 0.179086,
+            "overall_sentiment_label": "Somewhat-Bullish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "COIN",
+                    "relevance_score": "0.111358",
+                    "ticker_sentiment_score": "0.046493",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "FOREX:USD",
+                    "relevance_score": "0.027925",
+                    "ticker_sentiment_score": "0.072737",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "CRYPTO:BTC",
+                    "relevance_score": "0.027925",
+                    "ticker_sentiment_score": "-0.052025",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "CRYPTO:ETH",
+                    "relevance_score": "0.375924",
+                    "ticker_sentiment_score": "0.142671",
+                    "ticker_sentiment_label": "Neutral"
+                }
+            ]
+        },
+        {
+            "title": "4 principles to remember before you include cryptocurrency in your retirement investments",
+            "url": "https://www.marketwatch.com/story/4-principles-to-remember-before-you-include-cryptocurrency-in-your-retirement-investments-b11bad10",
+            "time_published": "20230926T090000",
+            "authors": [
+                "Christine D. Moriarty"
+            ],
+            "summary": "Before you spend your hard-earned cash on crypto, consider how it will fit in with your investment strategy, estate planning, risk tolerance and income taxes.",
+            "banner_image": "https://images.mktw.net/im-855824/social",
+            "source": "MarketWatch",
+            "category_within_source": "Top Stories",
+            "source_domain": "www.marketwatch.com",
+            "topics": [
+                {
+                    "topic": "Economy - Monetary",
+                    "relevance_score": "0.310843"
+                },
+                {
+                    "topic": "Financial Markets",
+                    "relevance_score": "0.999998"
+                },
+                {
+                    "topic": "Finance",
+                    "relevance_score": "1.0"
+                },
+                {
+                    "topic": "Blockchain",
+                    "relevance_score": "0.972193"
+                }
+            ],
+            "overall_sentiment_score": 0.009717,
+            "overall_sentiment_label": "Neutral",
+            "ticker_sentiment": [
+                {
+                    "ticker": "COIN",
+                    "relevance_score": "0.118257",
+                    "ticker_sentiment_score": "0.052378",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "FOREX:USD",
+                    "relevance_score": "0.039548",
+                    "ticker_sentiment_score": "0.041074",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "CRYPTO:BTC",
+                    "relevance_score": "0.118257",
+                    "ticker_sentiment_score": "0.085196",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "CRYPTO:LTC",
+                    "relevance_score": "0.039548",
+                    "ticker_sentiment_score": "0.125356",
+                    "ticker_sentiment_label": "Neutral"
+                }
+            ]
+        },
+        {
+            "title": "Ethereum Co-Founder Vitalik Buterin Sends Large Amount To Coinbase - Transfers $1.4M Worth Of ETH Within A Week - Coinbase Glb  ( NASDAQ:COIN ) ",
+            "url": "https://www.benzinga.com/markets/cryptocurrency/23/09/34845802/ethereum-co-founder-vitalik-buterin-sends-large-amount-to-coinbase-transfers-1-4m-worth-of",
+            "time_published": "20230925T035351",
+            "authors": [
+                "Mehab Qureshi"
+            ],
+            "summary": "Vitalik Buterin, the co-founder of Ethereum ETH/USD, has made a significant deposit to the cryptocurrency exchange Coinbase. What Happened: According to data from the Ethereum blockchain scanning website etherscan, Buterin deposited 400 ETH, equivalent to approximately $632,000, to Coinbase on ...",
+            "banner_image": "https://cdn.benzinga.com/files/images/story/2023/Saint,Petersburg-russia-09.05.2021:,The,Founder,Of,The,Ethereum,Project,Is,Vitalik_4.jpeg?width=1200&height=800&fit=crop",
+            "source": "Benzinga",
+            "category_within_source": "Markets",
+            "source_domain": "www.benzinga.com",
+            "topics": [
+                {
+                    "topic": "Financial Markets",
+                    "relevance_score": "0.538269"
+                },
+                {
+                    "topic": "Technology",
+                    "relevance_score": "0.5"
+                },
+                {
+                    "topic": "Finance",
+                    "relevance_score": "0.5"
+                },
+                {
+                    "topic": "Blockchain",
+                    "relevance_score": "0.928139"
+                }
+            ],
+            "overall_sentiment_score": 0.139958,
+            "overall_sentiment_label": "Neutral",
+            "ticker_sentiment": [
+                {
+                    "ticker": "SSTK",
+                    "relevance_score": "0.116348",
+                    "ticker_sentiment_score": "0.0",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "COIN",
+                    "relevance_score": "0.441698",
+                    "ticker_sentiment_score": "0.24287",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "FOREX:USD",
+                    "relevance_score": "0.230235",
+                    "ticker_sentiment_score": "0.189498",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "CRYPTO:BTC",
+                    "relevance_score": "0.116348",
+                    "ticker_sentiment_score": "0.21904",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "CRYPTO:ETH",
+                    "relevance_score": "0.892549",
+                    "ticker_sentiment_score": "0.181052",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "CRYPTO:SHIB",
+                    "relevance_score": "0.230235",
+                    "ticker_sentiment_score": "0.0",
+                    "ticker_sentiment_label": "Neutral"
+                }
+            ]
+        },
+        {
+            "title": "Crypto is growing up: Goodbye yacht parties and NFTs, hello regulation and practical tech",
+            "url": "https://markets.businessinsider.com/news/currencies/crypto-market-messari-mainnet-nft-regulation-sec-gensler-technology-coinbase-2023-9",
+            "time_published": "20230923T121500",
+            "authors": [
+                "Phil Rosen"
+            ],
+            "summary": "Crypto Is Growing up: Goodbye Yacht Parties and NFTs, Hello Regulation - Markets Insider ...",
+            "banner_image": null,
+            "source": "Business Insider",
+            "category_within_source": "GoogleRSS",
+            "source_domain": "markets.businessinsider.com",
+            "topics": [
+                {
+                    "topic": "Finance",
+                    "relevance_score": "1.0"
+                },
+                {
+                    "topic": "Blockchain",
+                    "relevance_score": "0.451494"
+                },
+                {
+                    "topic": "Financial Markets",
+                    "relevance_score": "0.744043"
+                }
+            ],
+            "overall_sentiment_score": 0.053159,
+            "overall_sentiment_label": "Neutral",
+            "ticker_sentiment": [
+                {
+                    "ticker": "COIN",
+                    "relevance_score": "0.03458",
+                    "ticker_sentiment_score": "-0.039546",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "FOREX:USD",
+                    "relevance_score": "0.03458",
+                    "ticker_sentiment_score": "0.0",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "CRYPTO:BTC",
+                    "relevance_score": "0.03458",
+                    "ticker_sentiment_score": "-0.243415",
+                    "ticker_sentiment_label": "Somewhat-Bearish"
+                },
+                {
+                    "ticker": "CRYPTO:ETH",
+                    "relevance_score": "0.069094",
+                    "ticker_sentiment_score": "0.026206",
+                    "ticker_sentiment_label": "Neutral"
+                }
+            ]
+        },
+        {
+            "title": "Stablecoin exodus: Why are investors fleeing crypto's safe haven?",
+            "url": "https://cointelegraph.com/news/stablecoin-exodus-why-are-investors-fleeing-crypto-s-safe-haven",
+            "time_published": "20230922T130300",
+            "authors": [
+                "Francisco Rodrigues"
+            ],
+            "summary": "Stablecoins have seen a 17-month decline as investors move to traditional assets. What needs to happen for the exodus to stop?",
+            "banner_image": "https://s3.cointelegraph.com/uploads/2023-09/a8ffd643-213f-4e5e-95f8-2b8bc2745739.jpg",
+            "source": "Cointelegraph",
+            "category_within_source": "n/a",
+            "source_domain": "cointelegraph.com",
+            "topics": [
+                {
+                    "topic": "Economy - Monetary",
+                    "relevance_score": "0.310843"
+                },
+                {
+                    "topic": "Financial Markets",
+                    "relevance_score": "0.999998"
+                },
+                {
+                    "topic": "Finance",
+                    "relevance_score": "1.0"
+                },
+                {
+                    "topic": "Blockchain",
+                    "relevance_score": "1.0"
+                },
+                {
+                    "topic": "Economy - Macro",
+                    "relevance_score": "0.158519"
+                }
+            ],
+            "overall_sentiment_score": 0.115472,
+            "overall_sentiment_label": "Neutral",
+            "ticker_sentiment": [
+                {
+                    "ticker": "PYPL",
+                    "relevance_score": "0.051441",
+                    "ticker_sentiment_score": "0.042673",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "COIN",
+                    "relevance_score": "0.025734",
+                    "ticker_sentiment_score": "0.066048",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "FOREX:USD",
+                    "relevance_score": "0.15347",
+                    "ticker_sentiment_score": "-0.06423",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "CRYPTO:BTC",
+                    "relevance_score": "0.077094",
+                    "ticker_sentiment_score": "-0.025478",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "CRYPTO:ETH",
+                    "relevance_score": "0.051441",
+                    "ticker_sentiment_score": "-0.039801",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "CRYPTO:BUSD",
+                    "relevance_score": "0.077094",
+                    "ticker_sentiment_score": "-0.077113",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "CRYPTO:KMD",
+                    "relevance_score": "0.025734",
+                    "ticker_sentiment_score": "0.109224",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "CRYPTO:TUSD",
+                    "relevance_score": "0.051441",
+                    "ticker_sentiment_score": "-0.044052",
+                    "ticker_sentiment_label": "Neutral"
+                }
+            ]
+        },
+        {
+            "title": "Ethereum price sees new low versus Bitcoin since switching to Proof-of-Stake",
+            "url": "https://cointelegraph.com/news/ethereum-price-new-low-bitcoin-switch-pos",
+            "time_published": "20230921T142500",
+            "authors": [
+                "Marcel Pechman"
+            ],
+            "summary": "Ethereum spot ETF request, Ripple's potential win against the SEC, and growing decentralized app dominance retain hope for ETH investors.",
+            "banner_image": "https://s3.cointelegraph.com/uploads/2023-09/466b9c55-bca7-4fa2-b288-a1417860c782.png",
+            "source": "Cointelegraph",
+            "category_within_source": "n/a",
+            "source_domain": "cointelegraph.com",
+            "topics": [
+                {
+                    "topic": "Economy - Monetary",
+                    "relevance_score": "0.158519"
+                },
+                {
+                    "topic": "Financial Markets",
+                    "relevance_score": "0.95493"
+                },
+                {
+                    "topic": "Finance",
+                    "relevance_score": "1.0"
+                },
+                {
+                    "topic": "Blockchain",
+                    "relevance_score": "0.158519"
+                }
+            ],
+            "overall_sentiment_score": 0.084169,
+            "overall_sentiment_label": "Neutral",
+            "ticker_sentiment": [
+                {
+                    "ticker": "COIN",
+                    "relevance_score": "0.054607",
+                    "ticker_sentiment_score": "-0.097798",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "FOREX:USD",
+                    "relevance_score": "0.054607",
+                    "ticker_sentiment_score": "0.117802",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "CRYPTO:BTC",
+                    "relevance_score": "0.318897",
+                    "ticker_sentiment_score": "-0.045303",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "CRYPTO:ETH",
+                    "relevance_score": "0.925058",
+                    "ticker_sentiment_score": "0.177079",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                }
+            ]
+        },
+        {
+            "title": "Crypto payment firm Alchemy Pay wins money transmitter license in US",
+            "url": "https://cointelegraph.com/news/crypto-payment-firm-alchemy-pay-arkansas-license",
+            "time_published": "20230921T084747",
+            "authors": [
+                "Helen Partz"
+            ],
+            "summary": "Alchemy Pay has joined the ranks of crypto firms like Coinbase and Jack Dorsey's Block in securing the Money Transmitter License in Arkansas.",
+            "banner_image": "https://images.cointelegraph.com/images/1200_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS91cGxvYWRzLzIwMjMtMDkvMjYyZjE3MmMtNmFkYi00YTkyLTk1MDQtOWYwZjlhMmUxMTk1LmpwZw==.jpg",
+            "source": "Cointelegraph",
+            "category_within_source": "n/a",
+            "source_domain": "cointelegraph.com",
+            "topics": [
+                {
+                    "topic": "Economy - Monetary",
+                    "relevance_score": "0.158519"
+                },
+                {
+                    "topic": "Financial Markets",
+                    "relevance_score": "0.158519"
+                },
+                {
+                    "topic": "Finance",
+                    "relevance_score": "1.0"
+                },
+                {
+                    "topic": "Blockchain",
+                    "relevance_score": "0.451494"
+                }
+            ],
+            "overall_sentiment_score": 0.165555,
+            "overall_sentiment_label": "Somewhat-Bullish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "MA",
+                    "relevance_score": "0.104683",
+                    "ticker_sentiment_score": "0.027531",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "COIN",
+                    "relevance_score": "0.104683",
+                    "ticker_sentiment_score": "-0.127242",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "FOREX:EUR",
+                    "relevance_score": "0.104683",
+                    "ticker_sentiment_score": "0.041577",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "FOREX:USD",
+                    "relevance_score": "0.104683",
+                    "ticker_sentiment_score": "0.041577",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "CRYPTO:BTC",
+                    "relevance_score": "0.207571",
+                    "ticker_sentiment_score": "0.062175",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "CRYPTO:ETH",
+                    "relevance_score": "0.207571",
+                    "ticker_sentiment_score": "0.062175",
+                    "ticker_sentiment_label": "Neutral"
+                }
+            ]
+        },
+        {
+            "title": "PayPal Brings PYUSD Stablecoin to Venmo",
+            "url": "https://decrypt.co/198022/paypal-brings-pyusd-stablecoin-to-venmo",
+            "time_published": "20230920T194920",
+            "authors": [
+                "Mat Di Salvo"
+            ],
+            "summary": "Select Venmo users can already buy the payment platform's ERC-20 stablecoin.",
+            "banner_image": "https://cdn.decrypt.co/resize/1024/height/512/wp-content/uploads/2021/08/venmo-crypto-gID_7.jpg",
+            "source": "Decrypt.co",
+            "category_within_source": "n/a",
+            "source_domain": "decrypt.co",
+            "topics": [
+                {
+                    "topic": "Finance",
+                    "relevance_score": "1.0"
+                },
+                {
+                    "topic": "Blockchain",
+                    "relevance_score": "0.9545"
+                }
+            ],
+            "overall_sentiment_score": 0.202279,
+            "overall_sentiment_label": "Somewhat-Bullish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "PYPL",
+                    "relevance_score": "0.813694",
+                    "ticker_sentiment_score": "0.290243",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "COIN",
+                    "relevance_score": "0.105141",
+                    "ticker_sentiment_score": "0.11547",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "FOREX:USD",
+                    "relevance_score": "0.308246",
+                    "ticker_sentiment_score": "0.18075",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "CRYPTO:BTC",
+                    "relevance_score": "0.208464",
+                    "ticker_sentiment_score": "0.0",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "CRYPTO:ETH",
+                    "relevance_score": "0.208464",
+                    "ticker_sentiment_score": "0.211863",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "CRYPTO:USDT",
+                    "relevance_score": "0.105141",
+                    "ticker_sentiment_score": "0.100282",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "CRYPTO:LTC",
+                    "relevance_score": "0.105141",
+                    "ticker_sentiment_score": "0.0",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "CRYPTO:BCH",
+                    "relevance_score": "0.105141",
+                    "ticker_sentiment_score": "0.0",
+                    "ticker_sentiment_label": "Neutral"
+                }
+            ]
+        },
+        {
+            "title": "What is Gala Games and how to buy GALA coin?",
+            "url": "https://cointelegraph.com/news/gala-games-how-to-buy-gala-coin",
+            "time_published": "20230918T161505",
+            "authors": [
+                "Emi Lacapra"
+            ],
+            "summary": "Gala Games is a blockchain-based gaming platform enabling players to create, own, and trade in-game assets using cryptocurrencies.",
+            "banner_image": "https://s3.cointelegraph.com/uploads/2023-09/783c111e-9915-4534-91b3-317e80f441f8.jpg",
+            "source": "Cointelegraph",
+            "category_within_source": "n/a",
+            "source_domain": "cointelegraph.com",
+            "topics": [
+                {
+                    "topic": "Finance",
+                    "relevance_score": "1.0"
+                },
+                {
+                    "topic": "Blockchain",
+                    "relevance_score": "0.999989"
+                },
+                {
+                    "topic": "Financial Markets",
+                    "relevance_score": "0.161647"
+                }
+            ],
+            "overall_sentiment_score": 0.319019,
+            "overall_sentiment_label": "Somewhat-Bullish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "COIN",
+                    "relevance_score": "0.062679",
+                    "ticker_sentiment_score": "0.018001",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "FOREX:USD",
+                    "relevance_score": "0.031364",
+                    "ticker_sentiment_score": "0.01659",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "CRYPTO:BTC",
+                    "relevance_score": "0.062679",
+                    "ticker_sentiment_score": "0.018001",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "CRYPTO:ETH",
+                    "relevance_score": "0.186498",
+                    "ticker_sentiment_score": "0.154086",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "CRYPTO:BNB",
+                    "relevance_score": "0.062679",
+                    "ticker_sentiment_score": "0.193197",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "CRYPTO:ERC",
+                    "relevance_score": "0.062679",
+                    "ticker_sentiment_score": "0.141087",
+                    "ticker_sentiment_label": "Neutral"
+                }
+            ]
+        },
+        {
+            "title": "PUBG Creator Krafton Unveils 'Overdare' NFT Game With AI Creation Tools",
+            "url": "https://decrypt.co/197345/pubg-creator-krafton-unveils-overdare-nft-game-ai-creation-tools",
+            "time_published": "20230915T181941",
+            "authors": [
+                "Kate Irwin"
+            ],
+            "summary": "Overdare looks to deliver a Roblox-like game creation experience within an open-world metaverse, built on top of the Settlus blockchain.",
+            "banner_image": "https://cdn.decrypt.co/resize/1024/height/512/wp-content/uploads/2023/09/overdare-krafton-gID_7.png",
+            "source": "Decrypt.co",
+            "category_within_source": "n/a",
+            "source_domain": "decrypt.co",
+            "topics": [
+                {
+                    "topic": "Technology",
+                    "relevance_score": "0.5"
+                },
+                {
+                    "topic": "Finance",
+                    "relevance_score": "0.5"
+                },
+                {
+                    "topic": "Blockchain",
+                    "relevance_score": "0.972193"
+                }
+            ],
+            "overall_sentiment_score": 0.035626,
+            "overall_sentiment_label": "Neutral",
+            "ticker_sentiment": [
+                {
+                    "ticker": "COIN",
+                    "relevance_score": "0.076115",
+                    "ticker_sentiment_score": "0.080844",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "NHNCF",
+                    "relevance_score": "0.2256",
+                    "ticker_sentiment_score": "0.074649",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "RBLX",
+                    "relevance_score": "0.076115",
+                    "ticker_sentiment_score": "0.154925",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "FOREX:USD",
+                    "relevance_score": "0.076115",
+                    "ticker_sentiment_score": "0.080844",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "CRYPTO:BTC",
+                    "relevance_score": "0.076115",
+                    "ticker_sentiment_score": "0.019347",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "CRYPTO:ETH",
+                    "relevance_score": "0.076115",
+                    "ticker_sentiment_score": "0.019347",
+                    "ticker_sentiment_label": "Neutral"
+                }
+            ]
+        },
+        {
+            "title": "SEC's Gensler May Face an Unbeatable Foe in Crypto",
+            "url": "https://www.thedailyupside.com/technology/blockchain/secs-gensler-may-face-an-unbeatable-foe-in-crypto/",
+            "time_published": "20230915T175535",
+            "authors": [
+                "Leah McGrath Goodman"
+            ],
+            "summary": "Gary Gensler, chairman of the U.S. Securities and Exchange Commission, gave a stinging indictment of crypto in congressional testimony...",
+            "banner_image": "https://www.thedailyupside.com/wp-content/uploads/2023/09/pc_crypto-regulation_09-15-23_CryptoWallet-1280x853.png",
+            "source": "Motley Fool",
+            "category_within_source": "n/a",
+            "source_domain": "www.thedailyupside.com",
+            "topics": [
+                {
+                    "topic": "Finance",
+                    "relevance_score": "1.0"
+                },
+                {
+                    "topic": "Blockchain",
+                    "relevance_score": "0.838487"
+                },
+                {
+                    "topic": "Financial Markets",
+                    "relevance_score": "0.986714"
+                }
+            ],
+            "overall_sentiment_score": -0.108334,
+            "overall_sentiment_label": "Neutral",
+            "ticker_sentiment": [
+                {
+                    "ticker": "COIN",
+                    "relevance_score": "0.16849",
+                    "ticker_sentiment_score": "-0.090434",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "FOREX:USD",
+                    "relevance_score": "0.033942",
+                    "ticker_sentiment_score": "-0.298397",
+                    "ticker_sentiment_label": "Somewhat-Bearish"
+                },
+                {
+                    "ticker": "CRYPTO:BTC",
+                    "relevance_score": "0.101582",
+                    "ticker_sentiment_score": "0.034933",
+                    "ticker_sentiment_label": "Neutral"
+                }
+            ]
+        },
+        {
+            "title": "Binance's CEO says signing up another 100 million crypto users will be a big challenge until they can buy crypto with cash",
+            "url": "https://markets.businessinsider.com/news/currencies/binance-ceo-changpeng-zhao-challenge-crypto-users-money-2023-9",
+            "time_published": "20230914T101700",
+            "authors": [
+                "Kai Xiang Teo"
+            ],
+            "summary": "Binance CEO on Biggest Challenge in Getting the Next 100 Million Crypto Users - Markets Insider ...",
+            "banner_image": "https://i.insider.com/6502b3a0992da60019ec0e90?width=1200&format=jpeg",
+            "source": "Business Insider",
+            "category_within_source": "GoogleRSS",
+            "source_domain": "markets.businessinsider.com",
+            "topics": [
+                {
+                    "topic": "Financial Markets",
+                    "relevance_score": "0.360215"
+                },
+                {
+                    "topic": "Technology",
+                    "relevance_score": "0.5"
+                },
+                {
+                    "topic": "Finance",
+                    "relevance_score": "0.5"
+                },
+                {
+                    "topic": "Blockchain",
+                    "relevance_score": "0.890401"
+                }
+            ],
+            "overall_sentiment_score": -0.068391,
+            "overall_sentiment_label": "Neutral",
+            "ticker_sentiment": [
+                {
+                    "ticker": "SBNY",
+                    "relevance_score": "0.101154",
+                    "ticker_sentiment_score": "-0.165735",
+                    "ticker_sentiment_label": "Somewhat-Bearish"
+                },
+                {
+                    "ticker": "COIN",
+                    "relevance_score": "0.101154",
+                    "ticker_sentiment_score": "-0.112073",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "FOREX:USD",
+                    "relevance_score": "0.200688",
+                    "ticker_sentiment_score": "-0.038624",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "CRYPTO:BTC",
+                    "relevance_score": "0.297061",
+                    "ticker_sentiment_score": "-0.051312",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "CRYPTO:ETH",
+                    "relevance_score": "0.101154",
+                    "ticker_sentiment_score": "0.0",
+                    "ticker_sentiment_label": "Neutral"
+                }
+            ]
+        },
+        {
+            "title": "5 Crypto Stocks to Watch From a Volatile Wall Street",
+            "url": "https://www.zacks.com/stock/news/2146509/5-crypto-stocks-to-watch-from-a-volatile-wall-street",
+            "time_published": "20230908T121800",
+            "authors": [
+                "Nalak Das"
+            ],
+            "summary": "5 Crypto-centric stocks to watch now are: NVDA, V, HOOD, COIN, SQ.",
+            "banner_image": "https://staticx-tuner.zacks.com/images/articles/main/63/5033.jpg",
+            "source": "Zacks Commentary",
+            "category_within_source": "n/a",
+            "source_domain": "www.zacks.com",
+            "topics": [
+                {
+                    "topic": "Technology",
+                    "relevance_score": "0.333333"
+                },
+                {
+                    "topic": "Finance",
+                    "relevance_score": "0.333333"
+                },
+                {
+                    "topic": "Blockchain",
+                    "relevance_score": "0.928139"
+                },
+                {
+                    "topic": "Economy - Monetary",
+                    "relevance_score": "0.890401"
+                },
+                {
+                    "topic": "Financial Markets",
+                    "relevance_score": "0.999346"
+                },
+                {
+                    "topic": "Manufacturing",
+                    "relevance_score": "0.333333"
+                },
+                {
+                    "topic": "Earnings",
+                    "relevance_score": "0.999996"
+                },
+                {
+                    "topic": "Economy - Macro",
+                    "relevance_score": "0.158519"
+                }
+            ],
+            "overall_sentiment_score": 0.120134,
+            "overall_sentiment_label": "Neutral",
+            "ticker_sentiment": [
+                {
+                    "ticker": "NVEI",
+                    "relevance_score": "0.04583",
+                    "ticker_sentiment_score": "0.140271",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "NVDA",
+                    "relevance_score": "0.22616",
+                    "ticker_sentiment_score": "0.146253",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "HOOD",
+                    "relevance_score": "0.22616",
+                    "ticker_sentiment_score": "0.202014",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "COIN",
+                    "relevance_score": "0.22616",
+                    "ticker_sentiment_score": "0.215441",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "SQ",
+                    "relevance_score": "0.22616",
+                    "ticker_sentiment_score": "0.09183",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "V",
+                    "relevance_score": "0.269776",
+                    "ticker_sentiment_score": "0.260524",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "FOREX:USD",
+                    "relevance_score": "0.04583",
+                    "ticker_sentiment_score": "0.152891",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "CRYPTO:BTC",
+                    "relevance_score": "0.22616",
+                    "ticker_sentiment_score": "0.006967",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "CRYPTO:ETH",
+                    "relevance_score": "0.136888",
+                    "ticker_sentiment_score": "0.007467",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "CRYPTO:DOGE",
+                    "relevance_score": "0.136888",
+                    "ticker_sentiment_score": "0.007467",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "CRYPTO:LTC",
+                    "relevance_score": "0.091509",
+                    "ticker_sentiment_score": "-0.065402",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "CRYPTO:ADA",
+                    "relevance_score": "0.091509",
+                    "ticker_sentiment_score": "-0.065402",
+                    "ticker_sentiment_label": "Neutral"
+                }
+            ]
+        },
+        {
+            "title": "Here's why Bitcoin will hit $22K soon",
+            "url": "https://cointelegraph.com/news/bitcoin-will-hit-22k-soon",
+            "time_published": "20230906T120000",
+            "authors": [
+                "Marcel Pechman"
+            ],
+            "summary": "This week, The Market Report discusses why $22,000 is the next logical step for Bitcoin and why BitMEX co-founder Arthur Hayes claims the bull market started back in March.",
+            "banner_image": "https://images.cointelegraph.com/images/1200_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS91cGxvYWRzLzIwMjMtMDkvZmFjOWQyYTAtNTIzNC00ZWM1LWEyZmYtMDM5ZjE0NzBjODlmLmpwZw==.jpg",
+            "source": "Cointelegraph",
+            "category_within_source": "n/a",
+            "source_domain": "cointelegraph.com",
+            "topics": [
+                {
+                    "topic": "Economy - Monetary",
+                    "relevance_score": "0.451494"
+                },
+                {
+                    "topic": "Financial Markets",
+                    "relevance_score": "0.614606"
+                },
+                {
+                    "topic": "Technology",
+                    "relevance_score": "0.5"
+                },
+                {
+                    "topic": "Finance",
+                    "relevance_score": "0.5"
+                },
+                {
+                    "topic": "Economy - Macro",
+                    "relevance_score": "0.158519"
+                }
+            ],
+            "overall_sentiment_score": -0.01449,
+            "overall_sentiment_label": "Neutral",
+            "ticker_sentiment": [
+                {
+                    "ticker": "GOOG",
+                    "relevance_score": "0.130217",
+                    "ticker_sentiment_score": "0.056209",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "COIN",
+                    "relevance_score": "0.130217",
+                    "ticker_sentiment_score": "-0.034535",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "FOREX:CHF",
+                    "relevance_score": "0.130217",
+                    "ticker_sentiment_score": "-0.142886",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "FOREX:EUR",
+                    "relevance_score": "0.130217",
+                    "ticker_sentiment_score": "-0.142886",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "FOREX:USD",
+                    "relevance_score": "0.256989",
+                    "ticker_sentiment_score": "-0.170083",
+                    "ticker_sentiment_label": "Somewhat-Bearish"
+                },
+                {
+                    "ticker": "CRYPTO:BTC",
+                    "relevance_score": "0.488007",
+                    "ticker_sentiment_score": "0.223517",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                }
+            ]
+        },
+        {
+            "title": "Coinbase to upsize debt repurchase by $30M",
+            "url": "https://cointelegraph.com/news/coinbase-to-upsize-debt-repurchase-by-30-million",
+            "time_published": "20230905T145630",
+            "authors": [
+                "Zhiyuan Sun"
+            ],
+            "summary": "A total of $180 million 2031 Senior Notes will be repurchased by the exchange.",
+            "banner_image": "https://images.cointelegraph.com/images/1200_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS91cGxvYWRzLzIwMjMtMDkvNTNlZTM4MjUtMmZmYi00ZDFjLTliMTQtMmM2NzkxNWZhOTVhLmpwZw==.jpg",
+            "source": "Cointelegraph",
+            "category_within_source": "n/a",
+            "source_domain": "cointelegraph.com",
+            "topics": [
+                {
+                    "topic": "Financial Markets",
+                    "relevance_score": "0.684621"
+                },
+                {
+                    "topic": "Earnings",
+                    "relevance_score": "0.495866"
+                },
+                {
+                    "topic": "Finance",
+                    "relevance_score": "1.0"
+                },
+                {
+                    "topic": "Blockchain",
+                    "relevance_score": "0.310843"
+                }
+            ],
+            "overall_sentiment_score": -0.026766,
+            "overall_sentiment_label": "Neutral",
+            "ticker_sentiment": [
+                {
+                    "ticker": "COIN",
+                    "relevance_score": "0.310843",
+                    "ticker_sentiment_score": "-0.147166",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "FOREX:USD",
+                    "relevance_score": "0.310843",
+                    "ticker_sentiment_score": "0.185459",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "CRYPTO:BTC",
+                    "relevance_score": "0.158519",
+                    "ticker_sentiment_score": "0.045019",
+                    "ticker_sentiment_label": "Neutral"
+                }
+            ]
+        },
+        {
+            "title": "The Incredible Shrinking Market Share of Circle's USDC Stablecoin",
+            "url": "https://decrypt.co/154608/shinking-market-share-circle-usdc-stablecoin",
+            "time_published": "20230901T170728",
+            "authors": [
+                "Mat Di Salvo"
+            ],
+            "summary": "For most of 2022, USDC was close to catching its rival Tether. But that figure has been shrinking-and fast.",
+            "banner_image": "https://cdn.decrypt.co/resize/1024/height/512/wp-content/uploads/2023/09/usdc-usd-coin-stablecoin-circle-gID_7.jpg",
+            "source": "Decrypt.co",
+            "category_within_source": "n/a",
+            "source_domain": "decrypt.co",
+            "topics": [
+                {
+                    "topic": "Finance",
+                    "relevance_score": "1.0"
+                },
+                {
+                    "topic": "Blockchain",
+                    "relevance_score": "0.928139"
+                },
+                {
+                    "topic": "Financial Markets",
+                    "relevance_score": "0.161647"
+                }
+            ],
+            "overall_sentiment_score": 0.062089,
+            "overall_sentiment_label": "Neutral",
+            "ticker_sentiment": [
+                {
+                    "ticker": "COIN",
+                    "relevance_score": "0.208914",
+                    "ticker_sentiment_score": "0.121942",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "FOREX:USD",
+                    "relevance_score": "0.157483",
+                    "ticker_sentiment_score": "0.146202",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "CRYPTO:BTC",
+                    "relevance_score": "0.052801",
+                    "ticker_sentiment_score": "0.003001",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "CRYPTO:ETH",
+                    "relevance_score": "0.105372",
+                    "ticker_sentiment_score": "0.021061",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "CRYPTO:USDT",
+                    "relevance_score": "0.208914",
+                    "ticker_sentiment_score": "0.003308",
+                    "ticker_sentiment_label": "Neutral"
+                }
+            ]
+        },
+        {
+            "title": "Bitcoin options data points to an interesting outcome after this week's $1.9B expiry",
+            "url": "https://cointelegraph.com/news/bitcoin-options-data-points-to-an-interesting-outcome-after-this-weeks-2b-expiry",
+            "time_published": "20230824T203731",
+            "authors": [
+                "Marcel Pechman"
+            ],
+            "summary": "A flurry of macro and crypto specific factors are expected to impact his week's $1.9 billion Bitcoin options expiry.",
+            "banner_image": "https://s3.cointelegraph.com/uploads/2023-08/e95ee95e-db73-41db-a128-70a61e235ed0.png",
+            "source": "Cointelegraph",
+            "category_within_source": "n/a",
+            "source_domain": "cointelegraph.com",
+            "topics": [
+                {
+                    "topic": "Economy - Monetary",
+                    "relevance_score": "0.158519"
+                },
+                {
+                    "topic": "Financial Markets",
+                    "relevance_score": "0.795202"
+                },
+                {
+                    "topic": "Finance",
+                    "relevance_score": "1.0"
+                },
+                {
+                    "topic": "Blockchain",
+                    "relevance_score": "0.576289"
+                }
+            ],
+            "overall_sentiment_score": 0.141138,
+            "overall_sentiment_label": "Neutral",
+            "ticker_sentiment": [
+                {
+                    "ticker": "COIN",
+                    "relevance_score": "0.056407",
+                    "ticker_sentiment_score": "0.194059",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "FOREX:EUR",
+                    "relevance_score": "0.056407",
+                    "ticker_sentiment_score": "-0.07391",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "FOREX:USD",
+                    "relevance_score": "0.168099",
+                    "ticker_sentiment_score": "0.165933",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "CRYPTO:BTC",
+                    "relevance_score": "0.60415",
+                    "ticker_sentiment_score": "0.142938",
+                    "ticker_sentiment_label": "Neutral"
+                }
+            ]
+        },
+        {
+            "title": "Shopify Adds Solana Pay to Its Platform to Allow USDC Payments",
+            "url": "https://decrypt.co/153514/shopify-adds-solana-pay-to-its-platform-to-allow-usdc-payments",
+            "time_published": "20230823T200821",
+            "authors": [
+                "Andrew Throuvalas"
+            ],
+            "summary": "The Solana Foundation says payments through the plugin require lowers fees than using a credit card.",
+            "banner_image": "https://cdn.decrypt.co/resize/1024/height/512/wp-content/uploads/2023/06/solana-tokens-sol-gID_7.jpg",
+            "source": "Decrypt.co",
+            "category_within_source": "n/a",
+            "source_domain": "decrypt.co",
+            "topics": [
+                {
+                    "topic": "Technology",
+                    "relevance_score": "0.5"
+                },
+                {
+                    "topic": "Finance",
+                    "relevance_score": "0.5"
+                },
+                {
+                    "topic": "Blockchain",
+                    "relevance_score": "0.576289"
+                }
+            ],
+            "overall_sentiment_score": 0.084075,
+            "overall_sentiment_label": "Neutral",
+            "ticker_sentiment": [
+                {
+                    "ticker": "SHOP",
+                    "relevance_score": "0.393462",
+                    "ticker_sentiment_score": "-0.064763",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "COIN",
+                    "relevance_score": "0.102449",
+                    "ticker_sentiment_score": "0.055222",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "FOREX:USD",
+                    "relevance_score": "0.102449",
+                    "ticker_sentiment_score": "0.016199",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "CRYPTO:BTC",
+                    "relevance_score": "0.203215",
+                    "ticker_sentiment_score": "0.087715",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "CRYPTO:ETH",
+                    "relevance_score": "0.102449",
+                    "ticker_sentiment_score": "0.064245",
+                    "ticker_sentiment_label": "Neutral"
+                }
+            ]
+        }
+    ]
+}
