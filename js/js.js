@@ -83,20 +83,20 @@ async function tickerandinfos() {
             `+ tickerandinfo[i].companyName.toUpperCase() + `
         </th>
         <td class="px-6 py-4 symbol">
-        `+ tickerandinfo[i].symbol.toUpperCase() +`
+        `+ tickerandinfo[i].symbol.toUpperCase() + `
         </td>
         <td class="px-6 py-4 isin">
-        `+ tickerandinfo[i].isin.toUpperCase() +`
+        `+ tickerandinfo[i].isin.toUpperCase() + `
         </td>
         <td class="px-6 py-4">
-        `+ tickerandinfo[i].price +`
+        `+ tickerandinfo[i].price + `
         $</td>`;
         const ticketinfo = document.getElementById('tickerandinfo');
 
-        ticker1.addEventListener('click', function(){cardInfo(i)});
+        ticker1.addEventListener('click', function () { cardInfo(i) });
         ticketinfo.appendChild(ticker1);
     }
-    
+
 
 
 }
@@ -134,36 +134,62 @@ function reset() {
 async function cardInfo(index) {
     const tickerinfo = await fetch("json/ticker.json");
     let tickerandinfo = await tickerinfo.json();
-    
+
+    // Obtenez la valeur actuellement sélectionnée
+    const selectedOption = document.getElementById('sortOptions').value;
+
+    // Triez en fonction de l'option sélectionnée
+    tickerandinfo.sort((a, b) => {
+        if (selectedOption === "price") {
+            return a[selectedOption] - b[selectedOption];
+        } else {
+            return a[selectedOption].localeCompare(b[selectedOption]);
+        }
+    });
+
+    const ticketinfo = document.getElementById('cardInfos');
+
     const card1 = document.getElementById('cardInfos');
-    card1.innerHTML = ''
+    card1.innerHTML = '';
 
     let i = index;
+
     const createCard = document.createElement('article');
-    createCard.classList.add('md:w-[80%]', 'p-2');
-    createCard.innerHTML = 
-        `<a href="`
-        + tickerandinfo[i].website +
-        `"target="_blank" title=""
-        class="flex flex-col items-center bg-[#131326] text-white border rounded-lg shadow md:flex-row">
-        <img class="m-4 object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
+    createCard.classList.add('md:w-[80%]', 'p-2', 'flex', 'flex-col', 'items-center', 'bg-[#131326]', 'text-white', 'border', 'rounded-lg', 'shadow', 'md:flex-row');
+    createCard.innerHTML =
+        ` <img class="m-4 object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
         src="`
-        + tickerandinfo[i].image + 
+        + tickerandinfo[i].image +
         `" alt="logo" title=""><div class="flex flex-col justify-between p-4 leading-normal">
         <h5 class="mb-2 text-2xl font-bold tracking-tight cardCompanyName">`
-        + tickerandinfo[i].companyName + 
-        `</h5><p class="mb-3 font-normal cardSector">`
-        + tickerandinfo[i].sector + 
-        `</p><p class="mb-3 font-normal cardIndustry">`
-        + tickerandinfo[i].industry + 
+        + tickerandinfo[i].companyName +
+        `</h5><p class="mb-3 font-normal cardSector" id="cardSector">`
+        + tickerandinfo[i].sector +
+        `</p><p class="mb-3 font-normal cardIndustry" id="cardIndustry">`
+        + tickerandinfo[i].industry +
         `</p><p class="mb-3 font-normal cardCompanyDescription">`
-        + tickerandinfo[i].description + 
-        `</p>`;
+        + tickerandinfo[i].description +
+        `</p>
+        <span class="flex justify-end">
+        <p class="mb-3 font-normal cardCompanyDescription bg-[#F07338] w-[25%] p-2 rounded flex justify-center items-center gap-4" id="infoplus">En savoir plus <i class="fa-solid fa-arrow-right"></i></p>
+        </span>
+        `;
+    card1.appendChild(createCard);
 
-        
-        card1.appendChild(createCard);
-        
+    if (tickerandinfo[i].sector == "" || tickerandinfo[i].industry == null) {
+        document.getElementById('cardSector').style.display = "none";
+        document.getElementById('cardIndustry').style.display = "none";
+    } else {
+        document.getElementById('cardSector').style.display = "";
+        document.getElementById('cardIndustry').style.display = "";
+    }
+
+    if (tickerandinfo[i].website === null) {
+        document.getElementById('infoplus').style.display = "none";
+    } else {
+        document.getElementById('infoplus').addEventListener('click', () => {
+            window.open(tickerandinfo[i].website, "_blank")
+        });
+    }
 }
-
-
 

@@ -7,9 +7,11 @@
     <title>For-Ex</title>
     <!-- css -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/main.css">
     <!-- js -->
     <script src="js/js.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/a606278b24.js" crossorigin="anonymous"></script>
 
 </head>
 
@@ -49,14 +51,18 @@
                     </ul>
                 </div>
             </div>
-        </nav>           
+        </nav>
     </header>
 
     <main>
+
+
         <section class="flex flex-row w-[100%] mx-auto mb-3">
             <article id="carrousel" class="flex flex-col md:flex-row w-[100%]"></article>
         </section>
-        <section class="md:w-[80%] mx-auto p-2">
+
+
+        <section class="md:w-[80%] mx-auto mb-3">
             <article class="flex flex-col md:flex-row justify-around">
                 <span class="flex flex-row items-start">
                     <input type="search" name="search" id="search" placeholder="Recherche ..">
@@ -72,11 +78,9 @@
                         <option value="price">Prix</option>
                     </select>
                 </span>
-
             </article>
 
             <article>
-
                 <div class="relative overflow-x-auto shadow-md sm:rounded-lg" id="tableaurefresh">
                     <table class="w-full text-sm text-left text-gray-500 text-gray-400">
                         <thead class="text-xs text-[#F07338] uppercase bg-gray-700 text-[#F07338]">
@@ -98,17 +102,15 @@
                 </th> -->
                             </tr>
                         </thead>
-                        <tbody id="tickerandinfo">
-
-                            
-                        </tbody>
+                        <tbody id="tickerandinfo"></tbody>
                     </table>
                 </div>
             </article>
+
         </section>
 
-        <section class="mx-auto w-full flex justify-center" id="cardInfos">
-        </section>
+        <section class="mx-auto w-full flex justify-center mb-3" id="cardInfos"></section>
+
     </main>
 
 
@@ -118,8 +120,7 @@
                 <a href="#" class="flex items-center mb-4 sm:mb-0">
                     <span class="self-center text-2xl font-semibold whitespace-nowrap text-white">For-Ex</span>
                 </a>
-                <ul
-                    class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 text-gray-400">
+                <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 text-gray-400">
                     <li>
                         <a href="mailto:sentr.maginot@gmail.com" class="hover:underline">Contact</a>
                     </li>
@@ -128,11 +129,12 @@
             <hr class="my-6 border-gray-200 sm:mx-auto border-gray-700 lg:my-8" />
             <span class="block text-sm text-gray-500 sm:text-center text-gray-400">© 2023 <a href="#"
                     class="hover:underline">For-Ex</a>. All Rights Reserved. <a href="https://github.com/arkunis"
-                    target="_blank" class="text-[#F07338]">Maginot Damien</a> - <a href="https://github.com/ZacZim" target="_blank" class="text-[#F07338]">Zimmer
+                    target="_blank" class="text-[#F07338]">Maginot Damien</a> - <a href="https://github.com/ZacZim"
+                    target="_blank" class="text-[#F07338]">Zimmer
                     Zacharie</a></span>
         </div>
     </footer>
-    
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.js"></script>
 </body>
 
