@@ -16,6 +16,7 @@ async function init() {
     document.getElementById('charts').style.display = "none";
 }
 
+
 function listetop() {
     //forex.markets.length - 1 pour parcourir tout le tableau
     if (window.matchMedia("(min-width: 640px)").matches) {
@@ -48,9 +49,12 @@ function listetop() {
         }
     }
 }
+
+
 function getRandomInt(max) {
     return Math.floor(Math.random() * max);
 }
+
 
 async function carrouselnews() {
     const carrousel = await fetch("json/article.json");
@@ -68,6 +72,7 @@ async function carrouselnews() {
         carrouselarticle.appendChild(carrousel1);
     }
 }
+
 
 async function tickerandinfos() {
     const tickerinfo = await fetch("json/ticker.json");
@@ -117,6 +122,7 @@ async function tickerandinfos() {
     }
 }
 
+
 async function searchticker() {
     let input = document.getElementById('search').value;
     input = input.toLowerCase();
@@ -137,6 +143,7 @@ async function searchticker() {
     // tickerandinfos();
 }
 
+
 function reset() {
     // if (document.getElementById('search').value != "") {
     //     document.getElementById('search').value = document.getElementById('search').defaultValue;
@@ -145,7 +152,7 @@ function reset() {
     // } else {
     //     document.getElementById('search').disabled;
     // }
-    
+
     const searchInput = document.getElementById('search');
     const tickerandinfo = document.getElementsByClassName('tickerandinfo');
 
@@ -157,6 +164,7 @@ function reset() {
         tickerandinfo[i].style.display = "";
     }
 }
+
 
 async function cardInfo(index) {
     const tickerinfo = await fetch("json/ticker.json");
@@ -174,8 +182,6 @@ async function cardInfo(index) {
             return a[selectedOption].localeCompare(b[selectedOption]);
         }
     });
-
-    const ticketinfo = document.getElementById('cardInfos');
 
     const card1 = document.getElementById('cardInfos');
     card1.innerHTML = '';
@@ -222,6 +228,7 @@ async function cardInfo(index) {
     }
 }
 
+
 async function graph(index) {
     i = index;
     const graphdata = await fetch("https://financialmodelingprep.com/api/v3/historical-price-full/" + i + "?from=2023-10-20&to=2023-10-2&apikey=9fd136d6b7d8f8b5888639b5fb9cd13d");
@@ -245,7 +252,7 @@ async function graph(index) {
             data: {
                 labels: xValues,
                 datasets: [{
-                    label: 'Prix du '+graphvar.symbol+' en Dollar',
+                    label: 'Prix du ' + graphvar.symbol + ' en Dollar',
                     data: highPrice,
                     borderColor: "blue",
                     fill: false
