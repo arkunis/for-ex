@@ -3,7 +3,7 @@ let ticker = "AAA";
 let tickerandinfo;
 
 async function init() {
-    const reponseinit = await fetch("../json/list.json");
+    const reponseinit = await fetch("json/list.json");
     forex = await reponseinit.json();
 
     listetop();
@@ -36,7 +36,7 @@ function getRandomInt(max) {
 }
 
 async function carrouselnews() {
-    const carrousel = await fetch("../json/article.json");
+    const carrousel = await fetch("json/article.json");
     news = await carrousel.json();
 
     for (let i = 0; i < 4; i++) {
@@ -53,7 +53,7 @@ async function carrouselnews() {
 }
 
 async function tickerandinfos() {
-    const tickerinfo = await fetch("../json/ticker.json");
+    const tickerinfo = await fetch("json/ticker.json");
     let tickerandinfo = await tickerinfo.json();
 
     // Obtenez la valeur actuellement sélectionnée
@@ -92,10 +92,13 @@ async function tickerandinfos() {
         `+ tickerandinfo[i].price +`
         $</td>`;
         const ticketinfo = document.getElementById('tickerandinfo');
-        ticketinfo.appendChild(ticker1)
 
+        ticker1.addEventListener('click', function(){cardInfo(i)});
+        ticketinfo.appendChild(ticker1);
     }
     
+
+
 }
 
 async function searchticker() {
@@ -127,3 +130,40 @@ function reset() {
         document.getElementById('search').disabled;
     }
 }
+
+async function cardInfo(index) {
+    const tickerinfo = await fetch("json/ticker.json");
+    let tickerandinfo = await tickerinfo.json();
+    
+    const card1 = document.getElementById('cardInfos');
+    card1.innerHTML = ''
+
+    let i = index;
+    const createCard = document.createElement('article');
+    createCard.classList.add('md:w-[80%]', 'p-2');
+    createCard.innerHTML = 
+        `<a href="`
+        + tickerandinfo[i].website +
+        `"target="_blank" title=""
+        class="flex flex-col items-center bg-[#131326] text-white border rounded-lg shadow md:flex-row">
+        <img class="m-4 object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
+        src="`
+        + tickerandinfo[i].image + 
+        `" alt="logo" title=""><div class="flex flex-col justify-between p-4 leading-normal">
+        <h5 class="mb-2 text-2xl font-bold tracking-tight cardCompanyName">`
+        + tickerandinfo[i].companyName + 
+        `</h5><p class="mb-3 font-normal cardSector">`
+        + tickerandinfo[i].sector + 
+        `</p><p class="mb-3 font-normal cardIndustry">`
+        + tickerandinfo[i].industry + 
+        `</p><p class="mb-3 font-normal cardCompanyDescription">`
+        + tickerandinfo[i].description + 
+        `</p>`;
+
+        
+        card1.appendChild(createCard);
+        
+}
+
+
+
