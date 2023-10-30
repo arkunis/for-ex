@@ -12,7 +12,7 @@
     <script src="js/js.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://kit.fontawesome.com/a606278b24.js" crossorigin="anonymous"></script>
-
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
 </head>
 
 <body onload="init()" class="m-0">
@@ -54,7 +54,7 @@
         </nav>
     </header>
 
-    <main>
+    <main class="w-[95%] mx-auto">
 
 
         <section class="flex flex-row w-[100%] mx-auto mb-3">
@@ -62,7 +62,7 @@
         </section>
 
 
-        <section class="md:w-[80%] mx-auto mb-3">
+        <section class="md:w-[100%] mx-auto mb-3">
             <article class="flex flex-col md:flex-row justify-around">
                 <span class="flex flex-row items-start">
                     <input type="search" name="search" id="search" placeholder="Recherche ..">
@@ -108,9 +108,16 @@
             </article>
 
         </section>
+<section class="flex flex-col lg:flex-row w-[100%] mx-auto">
+        <section class=" w-full flex justify-center mb-3" id="cardInfos"></section>
 
-        <section class="mx-auto w-full flex justify-center mb-3" id="cardInfos"></section>
-
+        <!-- GRAPH -->
+        <section class="w-[100%]">
+            <article class="flex justify-center" id="charts">
+                <canvas id="myChart" style="width:100%;max-width:700px"></canvas>
+            </article>
+        </section>
+    </section>
     </main>
 
 

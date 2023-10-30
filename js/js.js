@@ -1,5 +1,4 @@
 let forex;
-let ticker = "AAA";
 let tickerandinfo;
 
 async function init() {
@@ -9,26 +8,44 @@ async function init() {
     listetop();
     carrouselnews();
     tickerandinfos();
+    graph();
 
     document.getElementById('search').addEventListener('keyup', () => { searchticker() });
     document.getElementById('reset').addEventListener('click', () => { reset() });
     document.getElementById('sortOptions').addEventListener('change', () => { tickerandinfos() });
+    document.getElementById('charts').style.display="none";
 }
 
 function listetop() {
     //forex.markets.length - 1 pour parcourir tout le tableau
-    for (let i = 0; i < 5; i++) {
+    if (window.matchMedia("(min-width: 640px)").matches) {
+        for (let i = 0; i < 5; i++) {
 
-        j = getRandomInt(forex.length - 1);
-        const listetop = document.createElement('article');
-        listetop.classList.add('w-[15%]', 'flex', 'flex-col', 'items-center', 'bg-[#131326]', 'text-center', 'mb-1', 'rounded-md', 'p-2', 'text-white', 'shadow-[0_3px_6px_0_rgba(0,0,0,1)]');
-        listetop.innerHTML =
-            `<h3 class="text-sm truncate w-[100%]" id="stocklist" title="` + forex[j].name + `">` + forex[j].name + `</h3>
+            j = getRandomInt(forex.length - 1);
+            const listetop = document.createElement('article');
+            listetop.classList.add('w-[15%]', 'flex', 'flex-col', 'items-center', 'bg-[#131326]', 'text-center', 'mb-1', 'rounded-md', 'p-2', 'text-white', 'shadow-[0_3px_6px_0_rgba(0,0,0,1)]');
+            listetop.innerHTML =
+                `<h3 class="text-sm truncate w-[100%]" id="stocklist" title="` + forex[j].name + `">` + forex[j].name + `</h3>
     <p class="text-sm" id="pricelist">Prix : <span class="text-[#F07338]" title="`+ forex[j].price + `">` + forex[j].price + `</span>$</p>
     <p class="text-sm" id="typelist">Type : <span class="text-[#F07338]">`+ forex[j].type + `</span></p>`;
-        const stockarticle = document.getElementById('stockarticle');
-        stockarticle.appendChild(listetop);
+            const stockarticle = document.getElementById('stockarticle');
+            stockarticle.appendChild(listetop);
 
+        }
+    }else{
+        for (let i = 0; i < 3; i++) {
+
+            j = getRandomInt(forex.length - 1);
+            const listetop = document.createElement('article');
+            listetop.classList.add('w-[25%]', 'flex', 'flex-col', 'items-center', 'bg-[#131326]', 'text-center', 'mb-1', 'rounded-md', 'p-2', 'text-white', 'shadow-[0_3px_6px_0_rgba(0,0,0,1)]');
+            listetop.innerHTML =
+                `<h3 class="text-sm truncate w-[100%]" id="stocklist" title="` + forex[j].name + `">` + forex[j].name + `</h3>
+    <p class="text-sm" id="pricelist">Prix : <span class="text-[#F07338]" title="`+ forex[j].price + `">` + forex[j].price + `</span>$</p>
+    <p class="text-sm" id="typelist">Type : <span class="text-[#F07338]">`+ forex[j].type + `</span></p>`;
+            const stockarticle = document.getElementById('stockarticle');
+            stockarticle.appendChild(listetop);
+
+        }
     }
 }
 function getRandomInt(max) {
@@ -75,6 +92,7 @@ async function tickerandinfos() {
 
     // Créez et ajoutez les nouvelles entrées triées
     for (let i = 0; i < tickerandinfo.length; i++) {
+
         const ticker1 = document.createElement('tr');
         ticker1.classList.add('bg-[#131326]', 'hover:bg-gray-50', 'hover:bg-gray-800', 'text-white', 'tickerandinfo');
         ticker1.setAttribute("id", i);
@@ -92,13 +110,11 @@ async function tickerandinfos() {
         `+ tickerandinfo[i].price + `
         $</td>`;
         const ticketinfo = document.getElementById('tickerandinfo');
-
         ticker1.addEventListener('click', function () { cardInfo(i) });
+        ticker1.addEventListener('click', function () { graph(tickerandinfo[i].symbol) });
+        ticker1.addEventListener('click', function () { document.getElementById('charts').style.display=""; });
         ticketinfo.appendChild(ticker1);
     }
-
-
-
 }
 
 async function searchticker() {
@@ -135,6 +151,7 @@ async function cardInfo(index) {
     const tickerinfo = await fetch("json/ticker.json");
     let tickerandinfo = await tickerinfo.json();
 
+
     // Obtenez la valeur actuellement sélectionnée
     const selectedOption = document.getElementById('sortOptions').value;
 
@@ -155,23 +172,24 @@ async function cardInfo(index) {
     let i = index;
 
     const createCard = document.createElement('article');
-    createCard.classList.add('md:w-[80%]', 'p-2', 'flex', 'flex-col', 'items-center', 'bg-[#131326]', 'text-white', 'border', 'rounded-lg', 'shadow', 'md:flex-row');
+    createCard.classList.add('w-[100%]', 'p-2', 'flex', 'flex-col', 'items-center', 'bg-[#131326]', 'text-white', 'border', 'rounded-lg', 'shadow', 'md:flex-row');
     createCard.innerHTML =
-        ` <img class="m-4 object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
+        ` <img class="m-4 object-fit w-[20%] lg:w-full lg:h-[10vh] rounded-t-lg md:h-auto md:rounded-none md:rounded-l-lg"
         src="`
         + tickerandinfo[i].image +
         `" alt="logo" title=""><div class="flex flex-col justify-between p-4 leading-normal">
-        <h5 class="mb-2 text-2xl font-bold tracking-tight cardCompanyName">`
-        + tickerandinfo[i].companyName +
-        `</h5><p class="mb-3 font-normal cardSector" id="cardSector">`
+        <h5 class="mb-2 text-2xl font-bold tracking-tight cardCompanyName">
+        `+ tickerandinfo[i].companyName + `
+        </h5>
+        <p class="mb-3 font-normal cardSector" id="cardSector">`
         + tickerandinfo[i].sector +
         `</p><p class="mb-3 font-normal cardIndustry" id="cardIndustry">`
         + tickerandinfo[i].industry +
-        `</p><p class="mb-3 font-normal cardCompanyDescription">`
+        `</p><p class="mb-3 font-normal text-sm cardCompanyDescription line-clamp-[10]">`
         + tickerandinfo[i].description +
         `</p>
         <span class="flex justify-end">
-        <p class="mb-3 font-normal cardCompanyDescription bg-[#F07338] w-[25%] p-2 rounded flex justify-center items-center gap-4" id="infoplus">En savoir plus <i class="fa-solid fa-arrow-right"></i></p>
+        <p class="mb-3 font-normal cardCompanyDescription bg-[#F07338] w-[100%] p-2 rounded flex justify-center items-center gap-4" id="infoplus">En savoir plus <i class="fa-solid fa-arrow-right"></i></p>
         </span>
         `;
     card1.appendChild(createCard);
@@ -193,3 +211,38 @@ async function cardInfo(index) {
     }
 }
 
+async function graph(index) {
+    i = index;
+    const graphdata = await fetch("https://financialmodelingprep.com/api/v3/historical-price-full/" + i + "?from=2023-10-20&to=2023-10-2&apikey=9fd136d6b7d8f8b5888639b5fb9cd13d");
+    // const graphdata = await fetch("json/datahistory.json");
+    let graphvar = await graphdata.json();
+    let date = [];
+    let highPrice = [];
+    document.getElementById('myChart').innerHTML = "";
+
+    for (let i = 0; i < graphvar.historical.length; i++) {
+
+        date.push(graphvar.historical[i].date);
+        date.sort();
+
+        highPrice.push(graphvar.historical[i].high);
+        highPrice.sort();
+        const xValues = date;
+
+        new Chart("myChart", {
+            type: "line",
+            data: {
+                labels: xValues,
+                datasets: [{
+                    label: graphvar.symbol,
+                    data: highPrice,
+                    borderColor: "blue",
+                    fill: false
+                }]
+            },
+            options: {
+                legend: { display: true }
+            }
+        });
+    }
+}
