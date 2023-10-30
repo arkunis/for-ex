@@ -78,6 +78,7 @@ async function tickerandinfos() {
     for (let i = 0; i < tickerandinfo.length; i++) {
         const ticker1 = document.createElement('tr');
         ticker1.classList.add('bg-white', 'dark:bg-[#131326]', 'hover:bg-gray-50', 'dark:hover:bg-gray-800', 'text-white', 'tickerandinfo');
+        ticker1.setAttribute("id", i);
         ticker1.innerHTML =
             `<th scope="row" class="px-6 py-4 font-medium text-white whitespace-nowrap dark:text-white company">
             `+ tickerandinfo[i].companyName.toUpperCase() + `
@@ -95,6 +96,7 @@ async function tickerandinfos() {
         ticketinfo.appendChild(ticker1)
 
     }
+    
 }
 
 async function searchticker() {

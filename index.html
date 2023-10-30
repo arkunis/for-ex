@@ -70,7 +70,8 @@
             <article class="flex flex-col md:flex-row justify-around">
                 <span class="flex flex-row items-start">
                     <input type="search" name="search" id="search" placeholder="Recherche ..">
-                    <button type="button" id="reset" for="search" class="text-red-700 hover:text-white border border-red-700 hover:bg-red-800 font-medium text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-red-500 dark:text-red-500 dark:hover:text-white dark:hover:bg-red-600">Reset</button>
+                    <button type="button" id="reset" for="search"
+                        class="text-red-700 hover:text-white border border-red-700 hover:bg-red-800 font-medium text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-red-500 dark:text-red-500 dark:hover:text-white dark:hover:bg-red-600">Reset</button>
                 </span>
 
                 <span>
@@ -85,55 +86,60 @@
             </article>
 
             <article>
-                
-<div class="relative overflow-x-auto shadow-md sm:rounded-lg" id="tableaurefresh">
-    <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
-        <thead class="text-xs text-[#F07338] uppercase bg-gray-50 dark:bg-gray-700 dark:text-[#F07338]">
-            <tr>
-                <th scope="col" class="px-6 py-3">
-                    Nom
-                </th>
-                <th scope="col" class="px-6 py-3">
-                    Ticker
-                </th>
-                <th scope="col" class="px-6 py-3">
-                    ISIN
-                </th>
-                <th scope="col" class="px-6 py-3">
-                    Price
-                </th>
-                <!-- <th scope="col" class="px-6 py-3">
-                    <span class="sr-only">Edit</span>
+
+                <div class="relative overflow-x-auto shadow-md sm:rounded-lg" id="tableaurefresh">
+                    <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+                        <thead class="text-xs text-[#F07338] uppercase bg-gray-50 dark:bg-gray-700 dark:text-[#F07338]">
+                            <tr>
+                                <th scope="col" class="px-6 py-3">
+                                    Nom
+                                </th>
+                                <th scope="col" class="px-6 py-3">
+                                    Ticker
+                                </th>
+                                <th scope="col" class="px-6 py-3">
+                                    ISIN
+                                </th>
+                                <th scope="col" class="px-6 py-3">
+                                    Price
+                                </th>
+                                <!-- <th scope="col" class="px-6 py-3">
+                    <span class="sr-only">Information</span>
                 </th> -->
-            </tr>
-        </thead>
-        <tbody id="tickerandinfo">
+                            </tr>
+                        </thead>
+                        <tbody id="tickerandinfo">
 
-        </tbody>
-    </table>
-</div>
-
+                            
+                        </tbody>
+                    </table>
+                </div>
             </article>
+
         </section>
     </main>
 
-       
-<footer class="bg-white shadow dark:bg-[#131326] w-full">
-    <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
-        <div class="sm:flex sm:items-center sm:justify-between">
-            <a href="https://flowbite.com/" class="flex items-center mb-4 sm:mb-0">
-                <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">For-Ex</span>
-            </a>
-            <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
-                <li>
-                    <a href="mailto:sentr.maginot@gmail.com" class="hover:underline">Contact</a>
-                </li>
-            </ul>
+
+    <footer class="bg-white shadow dark:bg-[#131326] w-full">
+        <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+            <div class="sm:flex sm:items-center sm:justify-between">
+                <a href="https://flowbite.com/" class="flex items-center mb-4 sm:mb-0">
+                    <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">For-Ex</span>
+                </a>
+                <ul
+                    class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
+                    <li>
+                        <a href="mailto:sentr.maginot@gmail.com" class="hover:underline">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+            <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="#"
+                    class="hover:underline">For-Ex</a>. All Rights Reserved. <a href="https://github.com/arkunis"
+                    target="_blank">maginot Damien</a> - <a href="https://github.com/ZacZim" target="_blank">Zimmer
+                    Zacharie</a></span>
         </div>
-        <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-        <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="#" class="hover:underline">For-Ex</a>. All Rights Reserved. <a href="https://github.com/arkunis" target="_blank">maginot Damien</a> - <a href="https://github.com/ZacZim" target="_blank">Zimmer Zacharie</a></span>
-    </div>
-</footer>
+    </footer>
 </body>
 
 </html>
