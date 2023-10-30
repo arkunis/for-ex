@@ -234,7 +234,7 @@ async function graph(index) {
             data: {
                 labels: xValues,
                 datasets: [{
-                    label: graphvar.symbol,
+                    label: 'Prix du '+graphvar.symbol+' en Dollar',
                     data: highPrice,
                     borderColor: "blue",
                     fill: false
