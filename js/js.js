@@ -60,7 +60,7 @@ async function carrouselnews() {
 
         j = getRandomInt(news.feed.length - 1);
         const carrousel1 = document.createElement('div');
-        carrousel1.classList.add('w-[100%]', 'md:w-[25%]', 'bg-[url(' + news.feed[j].banner_image + ')]', 'h-[25vh]', 'bg-cover');
+        carrousel1.classList.add('w-[100%]', 'lg:w-[25%]', 'bg-[url(' + news.feed[j].banner_image + ')]', 'h-[25vh]', 'bg-cover', 'object-fill');
         carrousel1.innerHTML =
             `<a href="` + news.feed[j].url + `" target="_blank" class="flex flex-row justify-center items-center h-[25vh]">
             <p class="relative w-[100%] top-0 text-white bg-[#131326]/50 backdrop-blur-2xl p-2 h-auto md:h-[6.5vh] line-clamp-1 md:line-clamp-2" title="`+ news.feed[j].title + `">` + news.feed[j].title + `</p></a>`;
