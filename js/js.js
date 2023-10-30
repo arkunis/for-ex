@@ -13,7 +13,7 @@ async function init() {
     document.getElementById('search').addEventListener('keyup', () => { searchticker() });
     document.getElementById('reset').addEventListener('click', () => { reset() });
     document.getElementById('sortOptions').addEventListener('change', () => { tickerandinfos() });
-    document.getElementById('charts').style.display="none";
+    document.getElementById('charts').style.display = "none";
 }
 
 function listetop() {
@@ -32,7 +32,7 @@ function listetop() {
             stockarticle.appendChild(listetop);
 
         }
-    }else{
+    } else {
         for (let i = 0; i < 3; i++) {
 
             j = getRandomInt(forex.length - 1);
@@ -112,7 +112,7 @@ async function tickerandinfos() {
         const ticketinfo = document.getElementById('tickerandinfo');
         ticker1.addEventListener('click', function () { cardInfo(i) });
         ticker1.addEventListener('click', function () { graph(tickerandinfo[i].symbol) });
-        ticker1.addEventListener('click', function () { document.getElementById('charts').style.display=""; });
+        ticker1.addEventListener('click', function () { document.getElementById('charts').style.display = ""; });
         ticketinfo.appendChild(ticker1);
     }
 }
