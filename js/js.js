@@ -138,12 +138,23 @@ async function searchticker() {
 }
 
 function reset() {
-    if (document.getElementById('search').value != "") {
-        document.getElementById('search').value = document.getElementById('search').defaultValue;
-        location.reload();
+    // if (document.getElementById('search').value != "") {
+    //     document.getElementById('search').value = document.getElementById('search').defaultValue;
+    //     location.reload();
 
-    } else {
-        document.getElementById('search').disabled;
+    // } else {
+    //     document.getElementById('search').disabled;
+    // }
+    
+    const searchInput = document.getElementById('search');
+    const tickerandinfo = document.getElementsByClassName('tickerandinfo');
+
+    // Pour clear le champ de saisie
+    searchInput.value = "";
+
+    // Pour réafficher tous les lignes de la table 
+    for (let i = 0; i < tickerandinfo.length; i++) {
+        tickerandinfo[i].style.display = "";
     }
 }
 
