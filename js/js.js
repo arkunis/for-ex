@@ -2,7 +2,6 @@ let forex;
 let ticker = "AAA";
 let tickerandinfo;
 
-
 async function init() {
     const reponseinit = await fetch("../json/list.json");
     forex = await reponseinit.json();
@@ -77,10 +76,10 @@ async function tickerandinfos() {
     // Créez et ajoutez les nouvelles entrées triées
     for (let i = 0; i < tickerandinfo.length; i++) {
         const ticker1 = document.createElement('tr');
-        ticker1.classList.add('bg-white', 'dark:bg-[#131326]', 'hover:bg-gray-50', 'dark:hover:bg-gray-800', 'text-white', 'tickerandinfo');
+        ticker1.classList.add('bg-[#131326]', 'hover:bg-gray-50', 'hover:bg-gray-800', 'text-white', 'tickerandinfo');
         ticker1.setAttribute("id", i);
         ticker1.innerHTML =
-            `<th scope="row" class="px-6 py-4 font-medium text-white whitespace-nowrap dark:text-white company">
+            `<th scope="row" class="px-6 py-4 font-medium text-white whitespace-nowrap text-white company">
             `+ tickerandinfo[i].companyName.toUpperCase() + `
         </th>
         <td class="px-6 py-4 symbol">
