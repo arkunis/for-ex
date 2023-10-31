@@ -13,7 +13,6 @@ async function init() {
     listetop();
     carrouselnews();
     tickerandinfos();
-    graph();
 
     document.getElementById('search').addEventListener('keyup', () => { searchticker() });
     document.getElementById('reset').addEventListener('click', () => { reset() });
