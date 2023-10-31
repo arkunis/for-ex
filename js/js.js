@@ -183,7 +183,7 @@ async function cardInfo(index) {
     const createCard = document.createElement('article');
     createCard.classList.add('w-[100%]', 'p-2', 'flex', 'flex-col', 'items-center', 'bg-[#131326]', 'text-white', 'border', 'rounded-lg', 'shadow', 'md:flex-row');
     createCard.innerHTML =
-        ` <img class="m-4 object-fit w-[20%] lg:w-full lg:h-[10vh] rounded-t-lg md:h-auto md:rounded-none md:rounded-l-lg"
+        ` <img class="m-4 object-fit w-[20%] lg:w-full lg:h-auto rounded-t-lg md:h-auto md:rounded-none md:rounded-l-lg"
         src="`
         + tickerandinfo[i].image +
         `" alt="logo" title=""><div class="flex flex-col justify-between p-4 leading-normal">
@@ -227,6 +227,7 @@ async function graph(index) {
 
     const MonGraph = document.createElement('canvas');
     MonGraph.setAttribute('id', 'myChart');
+    MonGraph.setAttribute("style", "width:100%; max-width: 700px;");
     const DivMonGraph = document.getElementById('charts');
     DivMonGraph.appendChild(MonGraph);
 
@@ -235,11 +236,12 @@ async function graph(index) {
     let Mois = dateApi.getMonth();
     let Annee = dateApi.getFullYear();
     Mois = Mois + 1;
-    let JourMoins = Jour - 7;
+    let JourMoins = Jour - 10;
     console.log(Jour, Mois, Annee);
-    const graphdata = await fetch("https://financialmodelingprep.com/api/v3/historical-price-full/" + i + "?from=" + Annee + "-" + Mois + "-" + Jour + "&to=" + Annee + "-" + Mois + "-" + JourMoins + "&apikey=45d176bd77e428255cbe08d1c1e7503f");
+    const graphdata = await fetch("https://financialmodelingprep.com/api/v3/historical-price-full/" + i + "?from=" + Annee + "-" + Mois + "-" + JourMoins + "&to=" + Annee + "-" + Mois + "-" + Jour + "&apikey=45d176bd77e428255cbe08d1c1e7503f");
     // const graphdata = await fetch("json/datahistory.json");
     let graphvar = await graphdata.json();
+    console.log(graphdata);
     let date = [];
     let highPrice = [];
 
