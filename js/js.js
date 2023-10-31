@@ -1,7 +1,7 @@
 let forex;
 let tickerandinfo;
 let TickerRandom;
-let ApiKey = "2a30ac0f00afd0fc36d118a088ca239b";
+let ApiKey = "LMAHk6aiAsdHuz0qLgdO2TbMchMY2bCo";
 let RandTicker = [];
 let symbolRandom;
 let isin;
