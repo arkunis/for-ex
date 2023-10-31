@@ -236,11 +236,11 @@ async function cardInfo(index, symbol) {
         document.getElementById('cardIndustry').style.display = "";
     }
 
-    if (tickerandinfo[i].website === null) {
+    if (tickerandinfo[0].website === null) {
         document.getElementById('infoplus').style.display = "none";
     } else {
         document.getElementById('infoplus').addEventListener('click', () => {
-            window.open(tickerandinfo[i].website, "_blank")
+            window.open(tickerandinfo[0].website, "_blank")
         });
     }
 }
