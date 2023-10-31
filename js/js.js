@@ -223,14 +223,27 @@ async function cardInfo(index) {
 
 async function graph(index) {
     i = index;
-    const graphdata = await fetch("https://financialmodelingprep.com/api/v3/historical-price-full/" + i + "?from=2023-10-20&to=2023-10-2&apikey=9fd136d6b7d8f8b5888639b5fb9cd13d");
+    document.getElementById('charts').innerHTML = "";
+
+    const MonGraph = document.createElement('canvas');
+    MonGraph.setAttribute('id', 'myChart');
+    const DivMonGraph = document.getElementById('charts');
+    DivMonGraph.appendChild(MonGraph);
+
+    let dateApi = new Date();
+    let Jour = dateApi.getDate();
+    let Mois = dateApi.getMonth();
+    let Annee = dateApi.getFullYear();
+    Mois = Mois + 1;
+    let JourMoins = Jour - 7;
+    console.log(Jour, Mois, Annee);
+    const graphdata = await fetch("https://financialmodelingprep.com/api/v3/historical-price-full/" + i + "?from=" + Annee + "-" + Mois + "-" + Jour + "&to=" + Annee + "-" + Mois + "-" + JourMoins + "&apikey=45d176bd77e428255cbe08d1c1e7503f");
     // const graphdata = await fetch("json/datahistory.json");
     let graphvar = await graphdata.json();
     let date = [];
     let highPrice = [];
-    document.getElementById('myChart').innerHTML = "";
 
-    for (let i = 0; i < graphvar.historical.length; i++) {
+    for (let i = 0; i < 7; i++) {
 
         date.push(graphvar.historical[i].date);
         date.sort();
