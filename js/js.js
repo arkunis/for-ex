@@ -28,7 +28,6 @@ function GetTicker(){
         TickerRandom = forex[h].symbol;
         RandTicker.push(TickerRandom);
         }
-        console.log(RandTicker);
 }
 
 
@@ -188,7 +187,6 @@ async function cardInfo(index, symbol) {
     let Sym = symbol;
     const tickerinfo = await fetch("https://financialmodelingprep.com/api/v3/profile/"+Sym+"?apikey="+ApiKey+"");
     let tickerandinfo = await tickerinfo.json();
-    console.log(tickerinfo);
 
     // Obtenez la valeur actuellement sélectionnée
     const selectedOption = document.getElementById('sortOptions').value;
@@ -261,11 +259,11 @@ async function graph(index) {
     let Mois = dateApi.getMonth();
     let Annee = dateApi.getFullYear();
     Mois = Mois + 1;
-    let JourMoins = Jour - 10;
-    console.log(Jour, Mois, Annee);
-    const graphdata = await fetch("https://financialmodelingprep.com/api/v3/historical-price-full/" + i + "?from=" + Annee + "-" + Mois + "-" + JourMoins + "&to=" + Annee + "-" + Mois + "-" + Jour + "&apikey="+ApiKey+"");
+
+    const graphdata = await fetch("https://financialmodelingprep.com/api/v3/historical-price-full/" + i + "?&to=" + Annee + "-" + Mois + "-" + Jour + "&apikey="+ApiKey+"");
     // const graphdata = await fetch("json/datahistory.json");
     let graphvar = await graphdata.json();
+    console.log(graphdata);
     let date = [];
     let highPrice = [];
 
