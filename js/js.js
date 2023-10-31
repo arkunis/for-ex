@@ -28,7 +28,7 @@ function listetop() {
             listetop.innerHTML =
                 `<h3 class="text-sm truncate w-[100%]" id="stocklist" title="` + forex[j].name + `">` + forex[j].name + `</h3>
     <p class="text-sm" id="pricelist">Prix : <span class="text-[#F07338]" title="`+ forex[j].price + `">` + forex[j].price + `</span>$</p>
-    <p class="text-sm" id="typelist">Type : <span class="text-[#F07338]">`+ forex[j].type + `</span></p>`;
+    <p class="text-sm" id="typelist">Type : <span class="text-[#F07338]">`+ forex[j].changesPercentage + `</span></p>`;
             const stockarticle = document.getElementById('stockarticle');
             stockarticle.appendChild(listetop);
 
@@ -42,7 +42,7 @@ function listetop() {
             listetop.innerHTML =
                 `<h3 class="text-sm truncate w-[100%]" id="stocklist" title="` + forex[j].name + `">` + forex[j].name + `</h3>
     <p class="text-sm" id="pricelist">Prix : <span class="text-[#F07338]" title="`+ forex[j].price + `">` + forex[j].price + `</span>$</p>
-    <p class="text-sm" id="typelist">Type : <span class="text-[#F07338]">`+ forex[j].type + `</span></p>`;
+    <p class="text-sm" id="typelist">Type : <span class="text-[#F07338]">`+ forex[j].changesPercentage + `</span></p>`;
             const stockarticle = document.getElementById('stockarticle');
             stockarticle.appendChild(listetop);
 
