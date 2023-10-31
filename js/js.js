@@ -1,10 +1,10 @@
 let forex;
 let tickerandinfo;
 let TickerRandom;
-let ApiKey = "FXbzz17xyxdEz8gEjReMyRCEFklQkxMb";
+let ApiKey = "2a30ac0f00afd0fc36d118a088ca239b";
 let RandTicker = [];
 let symbolRandom;
-let Isin;
+let isin;
 
 async function init() {
     const reponseinit = await fetch("json/list.json");
@@ -100,8 +100,14 @@ async function tickerandinfos() {
     tickerandinfo.sort((a, b) => {
         if (selectedOption === "price") {
             return a[selectedOption] - b[selectedOption];
-        } else {
+        }
+        else {
+            if(a[selectedOption] === null || a[selectedOption] === ""){
+                a[selectedOption] = "Non Attribué";
+                return a[selectedOption].localeCompare(b[selectedOption]);
+            }else{
             return a[selectedOption].localeCompare(b[selectedOption]);
+            }
         }
     });
 
@@ -112,10 +118,10 @@ async function tickerandinfos() {
 
     // Créez et ajoutez les nouvelles entrées triées
     for (let i = 0; i < tickerandinfo.length; i++) {
-        if(tickerandinfo[i].isin === null){
-            Isin = "";
+        if(tickerandinfo[i].isin === null || tickerandinfo[i].isin === ""){
+            isin = "Non Attribué";
         }else{
-            Isin = tickerandinfo[i].isin;
+            isin = tickerandinfo[i].isin;
         }
         const ticker1 = document.createElement('tr');
         ticker1.classList.add('bg-[#131326]', 'hover:bg-gray-50', 'hover:bg-gray-800', 'text-white', 'tickerandinfo');
@@ -128,7 +134,7 @@ async function tickerandinfos() {
         `+ tickerandinfo[i].symbol.toUpperCase() + `
         </td>
         <td class="px-6 py-4 isin">
-        `+ Isin + `
+        `+ isin.toUpperCase() + `
         </td>
         <td class="px-6 py-4">
         `+ tickerandinfo[i].price + `
