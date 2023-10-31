@@ -145,14 +145,6 @@ async function searchticker() {
 
 
 function reset() {
-    // if (document.getElementById('search').value != "") {
-    //     document.getElementById('search').value = document.getElementById('search').defaultValue;
-    //     location.reload();
-
-    // } else {
-    //     document.getElementById('search').disabled;
-    // }
-
     const searchInput = document.getElementById('search');
     const tickerandinfo = document.getElementsByClassName('tickerandinfo');
 
