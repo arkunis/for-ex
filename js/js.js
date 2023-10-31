@@ -1,10 +1,15 @@
 let forex;
 let tickerandinfo;
+let TickerRandom;
+let ApiKey = "FXbzz17xyxdEz8gEjReMyRCEFklQkxMb";
+let RandTicker = [];
+let symbolRandom;
+let Isin;
 
 async function init() {
     const reponseinit = await fetch("json/list.json");
     forex = await reponseinit.json();
-
+    GetTicker();
     listetop();
     carrouselnews();
     tickerandinfos();
@@ -14,6 +19,16 @@ async function init() {
     document.getElementById('reset').addEventListener('click', () => { reset() });
     document.getElementById('sortOptions').addEventListener('change', () => { tickerandinfos() });
     document.getElementById('charts').style.display = "none";
+}
+
+
+function GetTicker(){
+    for (let i=0; i<10; i++){
+        h = getRandomInt(forex.length - 1);
+        TickerRandom = forex[h].symbol;
+        RandTicker.push(TickerRandom);
+        }
+        console.log(RandTicker);
 }
 
 
@@ -75,7 +90,7 @@ async function carrouselnews() {
 
 
 async function tickerandinfos() {
-    const tickerinfo = await fetch("json/ticker.json");
+    const tickerinfo = await fetch("https://financialmodelingprep.com/api/v3/profile/"+RandTicker.join(',')+"?apikey="+ApiKey+"");
     let tickerandinfo = await tickerinfo.json();
 
     // Obtenez la valeur actuellement sélectionnée
@@ -97,7 +112,11 @@ async function tickerandinfos() {
 
     // Créez et ajoutez les nouvelles entrées triées
     for (let i = 0; i < tickerandinfo.length; i++) {
-
+        if(tickerandinfo[i].isin === null){
+            Isin = "";
+        }else{
+            Isin = tickerandinfo[i].isin;
+        }
         const ticker1 = document.createElement('tr');
         ticker1.classList.add('bg-[#131326]', 'hover:bg-gray-50', 'hover:bg-gray-800', 'text-white', 'tickerandinfo');
         ticker1.setAttribute("id", i);
@@ -109,13 +128,13 @@ async function tickerandinfos() {
         `+ tickerandinfo[i].symbol.toUpperCase() + `
         </td>
         <td class="px-6 py-4 isin">
-        `+ tickerandinfo[i].isin.toUpperCase() + `
+        `+ Isin + `
         </td>
         <td class="px-6 py-4">
         `+ tickerandinfo[i].price + `
         $</td>`;
         const ticketinfo = document.getElementById('tickerandinfo');
-        ticker1.addEventListener('click', function () { cardInfo(i) });
+        ticker1.addEventListener('click', function () { cardInfo(i, tickerandinfo[i].symbol) });
         ticker1.addEventListener('click', function () { graph(tickerandinfo[i].symbol) });
         ticker1.addEventListener('click', function () { document.getElementById('charts').style.display = ""; });
         ticketinfo.appendChild(ticker1);
@@ -158,10 +177,12 @@ function reset() {
 }
 
 
-async function cardInfo(index) {
-    const tickerinfo = await fetch("json/ticker.json");
+async function cardInfo(index, symbol) {
+    let i = index;
+    let Sym = symbol;
+    const tickerinfo = await fetch("https://financialmodelingprep.com/api/v3/profile/"+Sym+"?apikey="+ApiKey+"");
     let tickerandinfo = await tickerinfo.json();
-
+    console.log(tickerinfo);
 
     // Obtenez la valeur actuellement sélectionnée
     const selectedOption = document.getElementById('sortOptions').value;
@@ -178,24 +199,22 @@ async function cardInfo(index) {
     const card1 = document.getElementById('cardInfos');
     card1.innerHTML = '';
 
-    let i = index;
-
     const createCard = document.createElement('article');
     createCard.classList.add('w-[100%]', 'p-2', 'flex', 'flex-col', 'items-center', 'bg-[#131326]', 'text-white', 'border', 'rounded-lg', 'shadow', 'md:flex-row');
     createCard.innerHTML =
         ` <img class="m-4 object-fit w-[20%] lg:w-full lg:h-auto rounded-t-lg md:h-auto md:rounded-none md:rounded-l-lg"
         src="`
-        + tickerandinfo[i].image +
+        + tickerandinfo[0].image +
         `" alt="logo" title=""><div class="flex flex-col justify-between p-4 leading-normal">
         <h5 class="mb-2 text-2xl font-bold tracking-tight cardCompanyName">
-        `+ tickerandinfo[i].companyName + `
+        `+ tickerandinfo[0].companyName + `
         </h5>
         <p class="mb-3 font-normal cardSector" id="cardSector">`
-        + tickerandinfo[i].sector +
+        + tickerandinfo[0].sector +
         `</p><p class="mb-3 font-normal cardIndustry" id="cardIndustry">`
-        + tickerandinfo[i].industry +
+        + tickerandinfo[0].industry +
         `</p><p class="mb-3 font-normal text-sm cardCompanyDescription line-clamp-[10]">`
-        + tickerandinfo[i].description +
+        + tickerandinfo[0].description +
         `</p>
         <span class="flex justify-end">
         <p class="mb-3 font-normal cardCompanyDescription bg-[#F07338] w-[100%] p-2 rounded flex justify-center items-center gap-4" id="infoplus">En savoir plus <i class="fa-solid fa-arrow-right"></i></p>
@@ -203,7 +222,7 @@ async function cardInfo(index) {
         `;
     card1.appendChild(createCard);
 
-    if (tickerandinfo[i].sector == "" || tickerandinfo[i].industry == null) {
+    if (tickerandinfo[0].sector == "" || tickerandinfo[0].industry == null) {
         document.getElementById('cardSector').style.display = "none";
         document.getElementById('cardIndustry').style.display = "none";
     } else {
@@ -238,10 +257,9 @@ async function graph(index) {
     Mois = Mois + 1;
     let JourMoins = Jour - 10;
     console.log(Jour, Mois, Annee);
-    const graphdata = await fetch("https://financialmodelingprep.com/api/v3/historical-price-full/" + i + "?from=" + Annee + "-" + Mois + "-" + JourMoins + "&to=" + Annee + "-" + Mois + "-" + Jour + "&apikey=45d176bd77e428255cbe08d1c1e7503f");
+    const graphdata = await fetch("https://financialmodelingprep.com/api/v3/historical-price-full/" + i + "?from=" + Annee + "-" + Mois + "-" + JourMoins + "&to=" + Annee + "-" + Mois + "-" + Jour + "&apikey="+ApiKey+"");
     // const graphdata = await fetch("json/datahistory.json");
     let graphvar = await graphdata.json();
-    console.log(graphdata);
     let date = [];
     let highPrice = [];
 
