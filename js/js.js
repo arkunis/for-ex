@@ -5,6 +5,8 @@ let ApiKey = "LMAHk6aiAsdHuz0qLgdO2TbMchMY2bCo";
 let RandTicker = [];
 let symbolRandom;
 let isin;
+let date = [];
+let highPrice = [];
 
 async function init() {
     const reponseinit = await fetch("json/list.json");
@@ -264,13 +266,12 @@ async function graph(index) {
     // const graphdata = await fetch("json/datahistory.json");
     let graphvar = await graphdata.json();
     console.log(graphdata);
-    let date = [];
-    let highPrice = [];
 
     for (let i = 0; i < 7; i++) {
 
         date.push(graphvar.historical[i].date);
         date.sort();
+
 
         highPrice.push(graphvar.historical[i].high);
         highPrice.sort();
